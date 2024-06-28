@@ -6,37 +6,41 @@ public class PlayerScript : MonoBehaviour
 {
 
     public float moveSpeed;
-    public int anxiety;
+    public int faithfulness;
     public bool inSpotlight;
+    public bool canMove;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(ManageAnxiety());
+        StartCoroutine(ManageFaithfulness());
     }
 
     // Update is called once per frame
     void Update()
     {
-        ManageMovement();
+        if (canMove)
+        {
+            ManageMovement();
+        }
     }
 
     void ManageMovement()
     {
-        if (Input.GetKey(KeyCode.D)) //RIGHT
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //RIGHT
         {
             transform.position += Vector3.right * moveSpeed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.A)) //LEFT
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) //LEFT
         {
             transform.position += Vector3.right * -moveSpeed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.S)) //DOWN
+        if (Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.DownArrow)) //DOWN
         {
             transform.position += Vector3.up * -moveSpeed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.W)) //UP
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //UP
         {
             transform.position += Vector3.up * moveSpeed * Time.deltaTime;
         }
@@ -57,17 +61,17 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    private IEnumerator ManageAnxiety()
+    private IEnumerator ManageFaithfulness()
     {
         yield return new WaitForSeconds(1);
         if (inSpotlight)
         {
-            anxiety--; //decrement 1
+            faithfulness++; //decrement 1
         }
         else
         {
-            anxiety++; //increment 1
+            faithfulness--; //increment 1
         }
-        StartCoroutine(ManageAnxiety());
+        StartCoroutine(ManageFaithfulness());
     }
 }

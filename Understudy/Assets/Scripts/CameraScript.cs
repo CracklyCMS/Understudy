@@ -8,6 +8,10 @@ public class CameraScript : MonoBehaviour
     public Vector3 offset;
     public float x;
     public float y;
+    public float leftXBound;
+    public float rightXBound;
+    public float downYBound;
+    public float upYBound;
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +22,11 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.position.x > -3.6 && player.position.x < 3.6)
+        if (player.position.x > leftXBound && player.position.x < rightXBound)
         {
             x = player.position.x;
         }
-        if(player.position.y < 2.5 && player.position.y > -2.5)
+        if(player.position.y < upYBound && player.position.y > downYBound)
         {
             y = player.position.y;
         }
