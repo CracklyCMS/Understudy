@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpotlightAct.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: c6702136c5cd7df4cacc208492765aa6
+  - enabled: 1
+    path: Assets/Scenes/Backstage.unity
+    guid: 3ab48e19c15ad2148a0978c0f3b61ee8
   m_configObjects: {}
