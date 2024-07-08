@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class SpotlightScript : MonoBehaviour
 {
     public Transform waypoint;
+    public PlayerScript player;
     public float moveSpeed;
     public bool canMove;
 
@@ -24,6 +26,24 @@ public class SpotlightScript : MonoBehaviour
 
             // Move spotlight with constant speed
             transform.Translate(direction * moveSpeed * Time.deltaTime, Space.World);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            player.inSpotlight = true;
+            print("DETECTED");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            player.inSpotlight = false;
+            print("UNDETECTED");
         }
     }
 }

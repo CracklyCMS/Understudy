@@ -6,6 +6,8 @@ public class PlayerScript : MonoBehaviour
 {
 
     public float moveSpeed;
+    public Rigidbody2D rb;
+    Vector2 movement;
     public int faithfulness;
     public bool inSpotlight;
     public bool canMove;
@@ -26,39 +28,20 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (canMove)
+        {
+            rb.velocity = movement * moveSpeed;
+        }
+    }
+
     void ManageMovement()
     {
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //RIGHT
-        {
-            transform.position += Vector3.right * moveSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) //LEFT
-        {
-            transform.position += Vector3.right * -moveSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.S)|| Input.GetKey(KeyCode.DownArrow)) //DOWN
-        {
-            transform.position += Vector3.up * -moveSpeed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //UP
-        {
-            transform.position += Vector3.up * moveSpeed * Time.deltaTime;
-        }
-    }
+        float mx = Input.GetAxisRaw("Horizontal");
+        float my = Input.GetAxisRaw("Vertical");
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        inSpotlight = true;
-        print("DETECTED");
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if(collision.gameObject.name == "Spotlight")
-        {
-            inSpotlight = false;
-            print("UNDETECTED");
-        }
+        movement = new Vector2(mx, my).normalized;
     }
 
     private IEnumerator ManageFaithfulness()
@@ -73,5 +56,6 @@ public class PlayerScript : MonoBehaviour
             faithfulness--; //increment 1
         }
         StartCoroutine(ManageFaithfulness());
+        print(faithfulness);
     }
 }

@@ -11,14 +11,14 @@ public class NPCScript : MonoBehaviour
     public TextMeshProUGUI text;
     public Canvas textBox;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         textBox.gameObject.SetActive(true);
         text.text = dialogue;
         print("DETECTED");
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")
         {
