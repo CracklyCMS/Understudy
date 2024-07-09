@@ -21,6 +21,7 @@ public class MainstageTimer : MonoBehaviour
     public TextMeshProUGUI time;
     public TextMeshProUGUI remaining;
     public Canvas message;
+    public GameOverScreenScript gameOverScreen;
 
     float fadeAlpha = 0;
 
@@ -82,7 +83,7 @@ public class MainstageTimer : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(nextScene);
+            gameOverScreen.gameObject.SetActive(true);
         }
     }
 

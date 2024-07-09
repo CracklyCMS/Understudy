@@ -10,4 +10,9 @@ public class TitleScreenScript : MonoBehaviour
         SceneManager.LoadScene("Backstage");
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
