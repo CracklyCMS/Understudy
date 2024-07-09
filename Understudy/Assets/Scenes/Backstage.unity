@@ -523,6 +523,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -161771623606064021, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: m_Size.y
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.x
       value: 2.5
@@ -536,30 +540,6 @@ PrefabInstance:
       value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_Size.x
-      value: 0.7668283
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_Size.y
-      value: 1.1394548
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0016335845
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.0008684397
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.28
       objectReference: {fileID: 0}
@@ -589,7 +569,7 @@ PrefabInstance:
       objectReference: {fileID: 275938699}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: dialogue
-      value: Right this way!
+      value: Be prepared to say your lines!
       objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name
@@ -1143,6 +1123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: SpotlightAct
+  fade: {fileID: 1456814236}
 --- !u!61 &1205196279
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2151,6 +2132,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -161771623606064021, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: m_Size.y
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.x
       value: 3
@@ -2172,30 +2157,6 @@ PrefabInstance:
       value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_Size.x
-      value: 0.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_Size.y
-      value: 1.1452206
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.04282087
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 614562201424983336, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.28
       objectReference: {fileID: 0}
@@ -2225,7 +2186,7 @@ PrefabInstance:
       objectReference: {fileID: 275938699}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: dialogue
-      value: Hello!
+      value: Walk out the door on the bottom right to start the performance!
       objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name

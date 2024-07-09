@@ -49,11 +49,7 @@ public class PlayerScript : MonoBehaviour
         yield return new WaitForSeconds(1);
         if (inSpotlight)
         {
-            faithfulness++; //decrement 1
-        }
-        else
-        {
-            faithfulness--; //increment 1
+            faithfulness++; //increment 1
         }
         StartCoroutine(ManageFaithfulness());
         print(faithfulness);
