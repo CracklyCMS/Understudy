@@ -12,11 +12,13 @@ public class PlayerScript : MonoBehaviour
     public bool inSpotlight;
     public bool canMove;
 
+    Animator playerAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(ManageFaithfulness());
+        playerAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -40,6 +42,9 @@ public class PlayerScript : MonoBehaviour
     {
         float mx = Input.GetAxisRaw("Horizontal");
         float my = Input.GetAxisRaw("Vertical");
+
+        playerAnimator.SetFloat("iswalkingright", mx);
+        playerAnimator.SetFloat("iswalkingforward", my);
 
         movement = new Vector2(mx, my).normalized;
     }
