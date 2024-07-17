@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEditor.Build;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -83,7 +84,7 @@ public class MainstageTimer : MonoBehaviour
         }
         else
         {
-            gameOverScreen.gameObject.SetActive(true);
+            SceneManager.LoadScene(nextScene);
         }
     }
 

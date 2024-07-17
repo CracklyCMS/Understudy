@@ -13,6 +13,7 @@ public class NPCScript : MonoBehaviour
     public Canvas textBox;
     public Image iconComponent;
     public Sprite icon;
+    public GameManager gameManager;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
