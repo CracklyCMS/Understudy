@@ -57,6 +57,6 @@ public class PlayerScript : MonoBehaviour
             faithfulness++; //increment 1
         }
         StartCoroutine(ManageFaithfulness());
-        print(faithfulness);
+        //print(faithfulness);
     }
 }

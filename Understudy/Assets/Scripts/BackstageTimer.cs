@@ -38,7 +38,7 @@ public class BackstageTimer : MonoBehaviour
                 timerIsRunning = false;
             }
         }
-        else
+        else if (timeRemaining == 0)
         {
             FadeOut();
         }
