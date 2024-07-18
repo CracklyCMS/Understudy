@@ -8,17 +8,29 @@ using UnityEngine.UI;
 public class NPCScript : MonoBehaviour
 {
 
-    public string dialogue;
+    public string defaultDialogue;
+    public string act2Dialogue;
+    public string diffOutfitDialogue;
     public TextMeshProUGUI text;
     public Canvas textBox;
     public Image iconComponent;
     public Sprite icon;
     public GameManager gameManager;
 
+    private int actNumber;
+    private int playerOutfitChoice;
+    public bool activeNPC;
+
+    private void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        actNumber = gameManager.actNumber;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        activeNPC = true;
         textBox.gameObject.SetActive(true);
-        text.text = dialogue;
         iconComponent.sprite = icon;
         print("DETECTED");
     }
@@ -27,11 +39,30 @@ public class NPCScript : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
+            activeNPC = false;
             textBox.gameObject.SetActive(false);
             print("UNDETECTED");
         }
     }
 
-
+    private void Update()
+    {
+        if (activeNPC)
+        {
+            playerOutfitChoice = gameManager.outfitNumber;
+            if (actNumber == 2)
+            {
+                text.text = act2Dialogue;
+            }
+            else if (playerOutfitChoice != 0)
+            {
+                text.text = diffOutfitDialogue;
+            }
+            else
+            {
+                text.text = defaultDialogue;
+            }
+        }
+    }
 
 }

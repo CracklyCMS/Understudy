@@ -23,6 +23,7 @@ public class MainstageTimer : MonoBehaviour
     public TextMeshProUGUI remaining;
     public Canvas message;
     public GameOverScreenScript gameOverScreen;
+    public GameManager gameManager;
 
     float fadeAlpha = 0;
 
@@ -32,6 +33,7 @@ public class MainstageTimer : MonoBehaviour
         timerIsRunning = false;
         player.canMove = false;
         spotlight.gameObject.SetActive(false);
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         StartCoroutine(StartMessage());
     }
 
@@ -84,7 +86,15 @@ public class MainstageTimer : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(nextScene);
+            if(gameManager.actNumber == 1)
+            {
+                gameManager.actNumber = 2;
+                SceneManager.LoadScene(nextScene);
+            }
+            else if(gameManager.actNumber == 2)
+            {
+                gameOverScreen.gameObject.SetActive(true);
+            }
         }
     }
 
