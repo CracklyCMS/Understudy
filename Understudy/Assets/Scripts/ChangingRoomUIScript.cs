@@ -26,6 +26,9 @@ public class ChangingRoomUIScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        currentOutfit.sprite = outfitSprites[outfitIndex];
+
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) //RIGHT
         {
             currentOutfit.sprite = outfitSprites[outfitIndex];
@@ -38,11 +41,11 @@ public class ChangingRoomUIScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            outfitIndex++;
-            if(outfitIndex == 2)
-            {
-                outfitIndex = 0;
-            }
+            //outfitIndex++;
+            //if(outfitIndex == 2)
+            //{
+                //outfitIndex = 0;
+            //}
             gameManager.currentCostume = outfitAnims[outfitIndex];
             player.GetComponent<Animator>().runtimeAnimatorController = outfitAnims[outfitIndex];
             player.canMove = true;
