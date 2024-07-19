@@ -9,7 +9,9 @@ public class GameManager : MonoBehaviour
     public PlayerScript player;
     public static GameManager Instance;
 
-    private int playerFaith;
+    public int playerFaith;
+    public int actNumber = 1;
+    public int outfitNumber = 0;
     public AnimatorController currentCostume;
 
     private void Awake()

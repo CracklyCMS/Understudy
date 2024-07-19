@@ -47,6 +47,7 @@ public class ChangingRoomUIScript : MonoBehaviour
                 //outfitIndex = 0;
             //}
             gameManager.currentCostume = outfitAnims[outfitIndex];
+            gameManager.outfitNumber = outfitIndex;
             player.GetComponent<Animator>().runtimeAnimatorController = outfitAnims[outfitIndex];
             player.canMove = true;
             gameObject.SetActive(false);

@@ -823,12 +823,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db50c69fa99a4a74992bbb68895e784e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: 
+  defaultDialogue: 
+  act2Dialogue: 
+  diffOutfitDialogue: 
   text: {fileID: 0}
   textBox: {fileID: 0}
   iconComponent: {fileID: 0}
   icon: {fileID: 0}
   gameManager: {fileID: 0}
+  activeNPC: 0
 --- !u!114 &275938697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,6 +984,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 603329309}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: npcNum
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: textBox
       value: 
       objectReference: {fileID: 275938699}
@@ -989,9 +996,25 @@ PrefabInstance:
       value: Be prepared to say your lines!
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 279384193}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: act2Dialogue
+      value: 'NPC2: This is my dialogue for the 2nd act!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent
       value: 
       objectReference: {fileID: 366076203}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: defaultDialogue
+      value: 'NPC2: This is my default dialogue!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: diffOutfitDialogue
+      value: 'NPC2: This is my dialogue for a diff outfit!'
+      objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name
       value: NPC2
@@ -1006,11 +1029,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8597892873004800337, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.71
+      value: -5.07
       objectReference: {fileID: 0}
     - target: {fileID: 8597892873004800337, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.11
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 8597892873004800337, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1082,6 +1105,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerFaith: 0
+  actNumber: 1
+  outfitNumber: 0
   currentCostume: {fileID: 9100000, guid: a816ab8024c217649a3af152a0155354, type: 2}
 --- !u!4 &279384194
 Transform:
@@ -5397,6 +5423,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 603329309}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: npcNum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: textBox
       value: 
       objectReference: {fileID: 275938699}
@@ -5405,9 +5435,25 @@ PrefabInstance:
       value: Walk out the door on the bottom right to start the performance!
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 279384193}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: act2Dialogue
+      value: 'NPC1: This is my dialogue for the 2nd act!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent
       value: 
       objectReference: {fileID: 366076203}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: defaultDialogue
+      value: 'NPC1: This is my default dialogue!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: diffOutfitDialogue
+      value: 'NPC1: This is my dialogue for a diff outfit!'
+      objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name
       value: NPC1
@@ -5586,6 +5632,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 603329309}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: npcNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: textBox
       value: 
       objectReference: {fileID: 275938699}
@@ -5593,6 +5643,10 @@ PrefabInstance:
       propertyPath: dialogue
       value: Good luck...
       objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 279384193}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent
       value: 

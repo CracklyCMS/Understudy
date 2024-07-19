@@ -450,6 +450,7 @@ MonoBehaviour:
   remaining: {fileID: 537783872}
   message: {fileID: 341890788}
   gameOverScreen: {fileID: 140521208}
+  gameManager: {fileID: 0}
 --- !u!20 &241432206 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1451783406415161700, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
