@@ -11,6 +11,8 @@ public class NPCScript : MonoBehaviour
     public string defaultDialogue;
     public string act2Dialogue;
     public string diffOutfitDialogue;
+    public string npcName;
+    public TextMeshProUGUI nameText;
     public TextMeshProUGUI text;
     public Canvas textBox;
     public Image iconComponent;
@@ -49,6 +51,7 @@ public class NPCScript : MonoBehaviour
     {
         if (activeNPC)
         {
+            nameText.text = npcName;
             playerOutfitChoice = gameManager.outfitNumber;
             if (actNumber == 2)
             {
