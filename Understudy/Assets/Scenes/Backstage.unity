@@ -931,11 +931,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.x
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.y
-      value: 2.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -1115,6 +1115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  camera: {fileID: 840361162}
   playerFaith: 0
   actNumber: 1
   outfitNumber: 0
@@ -2304,6 +2305,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
   m_PrefabInstance: {fileID: 1694644865}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &840361162 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4023619421404671644, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
+  m_PrefabInstance: {fileID: 2064208372}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4b6dc297b58c04a99f2bc975533272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &841282739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3052715265290610153, guid: 88f6fc90388fd9d479da543c02ff964d, type: 3}
@@ -5523,11 +5535,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.x
-      value: 3
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.y
-      value: 3
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Offset.x
@@ -5748,11 +5760,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.x
-      value: 4
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.y
-      value: 4
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
