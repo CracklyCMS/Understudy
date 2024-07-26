@@ -13,7 +13,7 @@ public class PlayCaptionsScript : MonoBehaviour
     public string[] act2Lines;
     private string[] chosenLines;
 
-    private int index = -1;
+    private int index = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +27,12 @@ public class PlayCaptionsScript : MonoBehaviour
         {
             chosenLines = act2Lines;
         }
+        lineText.text = chosenLines[index];
+        //StartCoroutine(IncrementIndex());
+    }
+
+    private void OnEnable()
+    {
         StartCoroutine(IncrementIndex());
     }
 
@@ -46,10 +52,10 @@ public class PlayCaptionsScript : MonoBehaviour
         }
     }
 
-    private IEnumerator IncrementIndex()
+    public IEnumerator IncrementIndex()
     {
-        index++;
         yield return new WaitForSeconds(5);
+        index++;
         StartCoroutine(IncrementIndex());
     }
 }

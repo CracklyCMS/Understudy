@@ -75,6 +75,7 @@ public class MainstageTimer : MonoBehaviour
         }
         if(seconds == 30)
         {
+            print("LINE CUE 2");
             lineCue2.transform.position = player.transform.position;
         }
 
