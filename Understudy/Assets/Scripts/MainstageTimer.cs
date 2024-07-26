@@ -24,6 +24,8 @@ public class MainstageTimer : MonoBehaviour
     public Canvas message;
     public GameOverScreenScript gameOverScreen;
     public GameManager gameManager;
+    public float currentTime;
+    public Canvas playCaptions;
 
     float fadeAlpha = 0;
 
@@ -64,6 +66,8 @@ public class MainstageTimer : MonoBehaviour
         timeToDisplay += 1;
 
         float seconds = Mathf.FloorToInt(timeToDisplay);
+
+        currentTime = seconds;
 
         if(seconds == 60)
         {
@@ -109,6 +113,6 @@ public class MainstageTimer : MonoBehaviour
         time.gameObject.SetActive(true);
         remaining.gameObject.SetActive(true);
         message.gameObject.SetActive(false);
-
+        playCaptions.gameObject.SetActive(true);
     }
 }
