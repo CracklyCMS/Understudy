@@ -19,7 +19,7 @@ public class DialogueBattleUIScript : MonoBehaviour
     public Image dialogueBox;
     public TextMeshProUGUI dialogueText;
     public MainstageTimer mainstageTimer;
-    public Canvas playCaptions;
+    public PlayCaptionsScript playCaptions;
     public string[] chosenDialogue;
     public string[] chosenOptions;
 
@@ -72,6 +72,7 @@ public class DialogueBattleUIScript : MonoBehaviour
                 player.canMove = true;
                 spotlight.canMove = true;
                 playCaptions.gameObject.SetActive(true);
+                //playCaptions.ForceIncrementIndex();
                 mainstageTimer.timerIsRunning = true;
                 gameCamera.orthographicSize = 5;
                 lineText.gameObject.SetActive(false);

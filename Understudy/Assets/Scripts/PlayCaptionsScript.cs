@@ -58,4 +58,9 @@ public class PlayCaptionsScript : MonoBehaviour
         index++;
         StartCoroutine(IncrementIndex());
     }
+
+    public void ForceIncrementIndex()
+    {
+        index++;
+    }
 }
