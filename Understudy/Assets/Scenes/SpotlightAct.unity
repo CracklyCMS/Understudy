@@ -688,7 +688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64ca775113e035b41a213f2253d34fcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 65
+  timeRemaining: 60
   timerIsRunning: 0
   timeText: {fileID: 1971233653}
   nextScene: Backstage
@@ -2643,13 +2643,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 140521203}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 140521208}
+        m_TargetAssemblyTypeName: GameOverScreenScript, Assembly-CSharp
+        m_MethodName: TitleScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3059,7 +3059,13 @@ MonoBehaviour:
   - This text box will tell the story of the play outside of the battles.
   - A new line appears every 5 seconds currently.
   - These captions continue until there are no more lines in the array!
-  act2Lines: []
+  - Which will be right after this.
+  act2Lines:
+  - Now we're in act 2!
+  - It's pretty similar to 1 right now.
+  - But at least the dialogue is different!
+  - Act 2 will eventually have more obstacles for the player.
+  - So stay tuned!
 --- !u!1 &761616065
 GameObject:
   m_ObjectHideFlags: 0
@@ -3816,7 +3822,15 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Options.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
@@ -3828,8 +3842,16 @@ PrefabInstance:
       value: It's so impressive!
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Options.Array.data[0]
+      value: Sure do!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Options.Array.data[1]
+      value: It's alright.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[0]
-      value: 'NPC: This is an example dialogue battle.'
+      value: 'NPC: This is an example dialogue battle. (Press Space to Continue)'
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[1]
@@ -3838,6 +3860,18 @@ PrefabInstance:
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[2]
       value: 'NPC: Well what else do you have to say?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[0]
+      value: 'NPC: Hey we''re in the second act now.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[1]
+      value: 'Player: So it seems.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[2]
+      value: 'NPC: Do you like the change in dialogue?'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6644,28 +6678,56 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Options.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[0]
-      value: yanny
+      value: Something off script.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[1]
-      value: laurel
+      value: Something on script.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Options.Array.data[0]
+      value: Yes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Options.Array.data[1]
+      value: No.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[0]
-      value: 'NPC: ey its the second battle already.'
+      value: 'NPC: Each act will have 2 battles at set times.'
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[1]
-      value: 'Player: so it seems.'
+      value: 'Player: That''s right!'
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[2]
-      value: 'NPC: what else do you have to say?'
+      value: 'NPC: And your line options are...?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[0]
+      value: 'NPC: So what happens after this act?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[1]
+      value: 'Player: The game ends, with one of two possible endings!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[2]
+      value: 'NPC: Oh wow, are you satisfied with the narrative direction?'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

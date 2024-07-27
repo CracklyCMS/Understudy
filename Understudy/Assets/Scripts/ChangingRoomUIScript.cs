@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Animations;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UI;
 
@@ -12,7 +11,7 @@ public class ChangingRoomUIScript : MonoBehaviour
     public BackstageTimer backstageTimer;
 
     public Sprite[] outfitSprites;
-    public AnimatorController[] outfitAnims;
+    public RuntimeAnimatorController[] outfitAnims;
 
     GameManager gameManager;
     int outfitIndex = 1;

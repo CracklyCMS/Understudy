@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Build;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -69,11 +66,11 @@ public class MainstageTimer : MonoBehaviour
 
         currentTime = seconds;
 
-        if(seconds == 60)
+        if(seconds == 40)
         {
             lineCue1.transform.position = player.transform.position;
         }
-        if(seconds == 30)
+        if(seconds == 20)
         {
             print("LINE CUE 2");
             lineCue2.transform.position = player.transform.position;

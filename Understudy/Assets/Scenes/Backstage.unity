@@ -1011,7 +1011,7 @@ PrefabInstance:
       objectReference: {fileID: 279384193}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: act2Dialogue
-      value: 'NPC2: This is my dialogue for the 2nd act!'
+      value: This is my dialogue for the 2nd act!
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent
@@ -1019,11 +1019,11 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
-      value: 'NPC2: This is my default dialogue!'
+      value: This is my default dialogue!
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
-      value: 'NPC2: This is my dialogue for a diff outfit!'
+      value: This is my dialogue for a diff outfit!
       objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name
@@ -5607,7 +5607,7 @@ PrefabInstance:
       objectReference: {fileID: 279384193}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: act2Dialogue
-      value: 'NPC1: This is my dialogue for the 2nd act!'
+      value: This is my dialogue for the 2nd act!
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent
@@ -5615,11 +5615,11 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
-      value: 'NPC1: This is my default dialogue!'
+      value: This is my default dialogue!
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
-      value: 'NPC1: This is my dialogue for a diff outfit!'
+      value: This is my dialogue for a diff outfit!
       objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name
@@ -5824,7 +5824,7 @@ PrefabInstance:
       objectReference: {fileID: 279384193}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: act2Dialogue
-      value: This. Is what I say in teh second act.
+      value: This is what I say in the second act.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent
@@ -5832,11 +5832,11 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
-      value: Hi this is what I say in the first act
+      value: Hi this is what I say in the first act.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
-      value: This is what I say if a diff outfit was chosen. Idk if I like it
+      value: This is what I say if a diff outfit was chosen. Idk if I like it.
       objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name
