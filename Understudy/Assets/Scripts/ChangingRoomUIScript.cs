@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ public class ChangingRoomUIScript : MonoBehaviour
     public Image currentOutfit;
     public PlayerScript player;
     public BackstageTimer backstageTimer;
+    public StandaloneInputModule controllerInput;
 
     public Sprite[] outfitSprites;
     public RuntimeAnimatorController[] outfitAnims;
@@ -28,7 +30,7 @@ public class ChangingRoomUIScript : MonoBehaviour
         
         currentOutfit.sprite = outfitSprites[outfitIndex];
 
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) //RIGHT
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetButtonDown("Cancel")) //RIGHT
         {
             currentOutfit.sprite = outfitSprites[outfitIndex];
             outfitIndex++;
@@ -38,7 +40,7 @@ public class ChangingRoomUIScript : MonoBehaviour
             }
             print(outfitIndex);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Submit"))
         {
             //outfitIndex++;
             //if(outfitIndex == 2)
