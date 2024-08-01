@@ -3895,8 +3895,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 60s
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13953,6 +13953,10 @@ PrefabInstance:
     - target: {fileID: 4023619421404671644, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: rightXBound
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023619421404671644, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
+      propertyPath: shouldUpdate
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9135488960023465606, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: m_LocalPosition.x

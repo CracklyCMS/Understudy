@@ -38,7 +38,14 @@ public class PlayCaptionsScript : MonoBehaviour
 
     private void OnDisable()
     {
-        index++;
+        if (index == chosenLines.Length)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            index++;
+        }
     }
 
     // Update is called once per frame

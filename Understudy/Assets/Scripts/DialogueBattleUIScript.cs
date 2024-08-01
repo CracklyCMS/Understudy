@@ -9,7 +9,7 @@ public class DialogueBattleUIScript : MonoBehaviour
 {
     public PlayerScript player;
     public SpotlightScript spotlight;
-    public Camera gameCamera;
+    public CameraScript gameCamera;
     public TextMeshProUGUI lineText;
     public TextMeshProUGUI controlsText;
     public Image leftChoice;
@@ -20,6 +20,7 @@ public class DialogueBattleUIScript : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public MainstageTimer mainstageTimer;
     public PlayCaptionsScript playCaptions;
+    public GameObject zeus;
     public string[] chosenDialogue;
     public string[] chosenOptions;
 
@@ -69,13 +70,15 @@ public class DialogueBattleUIScript : MonoBehaviour
             else
             {
                 //RESETTING EVERYTHING
+                zeus.SetActive(false);
                 player.canMove = true;
-                spotlight.canMove = true;
+                spotlight.gameObject.SetActive(true);
                 playCaptions.gameObject.SetActive(true);
                 leftChoice.color = new Color(0.5f, 0, 0);
                 rightChoice.color = new Color(0.5f, 0, 0);
                 mainstageTimer.timerIsRunning = true;
-                gameCamera.orthographicSize = 5;
+                gameCamera.shouldUpdate = true;
+                gameCamera.GetComponent<Camera>().orthographicSize = 5;
                 lineText.gameObject.SetActive(false);
                 controlsText.gameObject.SetActive(false);
                 leftChoice.gameObject.SetActive(false);
