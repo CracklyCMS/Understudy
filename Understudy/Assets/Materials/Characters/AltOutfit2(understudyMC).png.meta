@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 3d140c1fdc38b61419b4460f9f6e5112
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 768
+        width: 147
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e15ec81243cc29488d43e10b9c82cd7
+      internalID: -2115496251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 768
+        width: 135
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11701719eb9c3134daddb53bc04b3e6a
+      internalID: -405065554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 768
+        width: 141
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7307c000a535be45bee2d9353db0cf5
+      internalID: -823940352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_3
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 768
+        width: 147
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4aa1145f4e906447aefd416bfbd8aa0
+      internalID: 720245837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_4
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 768
+        width: 145
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789c19c3e16313a4fb6416d739604af2
+      internalID: -1505355467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 576
+        width: 148
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71e07b0801bf4f449b732ccb2abf4da
+      internalID: 137530187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 576
+        width: 134
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4efc4289da14f4aa387ef354efc011
+      internalID: 923194012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_7
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 576
+        width: 136
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cc9b6b7cbbbc240a28bc50199df0d3
+      internalID: -1109765185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_8
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 576
+        width: 130
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644e47d323080c6469e60e3b43687b1c
+      internalID: -2078763162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_9
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 576
+        width: 136
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c62cd92c91b0e43b4389a22dd6b421
+      internalID: -2023187738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 384
+        width: 146
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9223ed9c6f0ac54583b6e9b74584727
+      internalID: 1511102854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_11
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 384
+        width: 125
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613484866431a9a44859690552ad9096
+      internalID: -1123953687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_12
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 384
+        width: 137
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0448d50e1f035740a65eac17695de35
+      internalID: -2068580203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_13
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 384
+        width: 132
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc0ff29632ae6046944abf060b280fe
+      internalID: -1565136337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_14
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 384
+        width: 136
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac4c7070fdb60d4e9ad8dd239c744e1
+      internalID: 355033192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 192
+        width: 145
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36d1b270fe163540a5f5deef71ab7a4
+      internalID: -1395244040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_16
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 192
+        width: 138
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43ceb7656f8a6d4c979372cd843fd7d
+      internalID: -236483230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_17
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 192
+        width: 139
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61a3f85bd980a44fad9a9359d1022be
+      internalID: 1604059026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_18
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 192
+        width: 145
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3166d4013a81afd418b7cf576a8a7c18
+      internalID: -964905049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_19
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 192
+        width: 145
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017b580795355d44a9821f4e3f71dab1
+      internalID: -1302890160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_20
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 146
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8cb5ae084412384480505f7e6d0512a
+      internalID: 1671683709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCALTOUTFIT2_21
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 140
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39ef60fe53e882429a0488ee26ec5cd
+      internalID: 1287511414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UnderstudyMCALTOUTFIT2_0: -2115496251
+      UnderstudyMCALTOUTFIT2_1: -405065554
+      UnderstudyMCALTOUTFIT2_10: 1511102854
+      UnderstudyMCALTOUTFIT2_11: -1123953687
+      UnderstudyMCALTOUTFIT2_12: -2068580203
+      UnderstudyMCALTOUTFIT2_13: -1565136337
+      UnderstudyMCALTOUTFIT2_14: 355033192
+      UnderstudyMCALTOUTFIT2_15: -1395244040
+      UnderstudyMCALTOUTFIT2_16: -236483230
+      UnderstudyMCALTOUTFIT2_17: 1604059026
+      UnderstudyMCALTOUTFIT2_18: -964905049
+      UnderstudyMCALTOUTFIT2_19: -1302890160
+      UnderstudyMCALTOUTFIT2_2: -823940352
+      UnderstudyMCALTOUTFIT2_20: 1671683709
+      UnderstudyMCALTOUTFIT2_21: 1287511414
+      UnderstudyMCALTOUTFIT2_3: 720245837
+      UnderstudyMCALTOUTFIT2_4: -1505355467
+      UnderstudyMCALTOUTFIT2_5: 137530187
+      UnderstudyMCALTOUTFIT2_6: 923194012
+      UnderstudyMCALTOUTFIT2_7: -1109765185
+      UnderstudyMCALTOUTFIT2_8: -2078763162
+      UnderstudyMCALTOUTFIT2_9: -2023187738
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
