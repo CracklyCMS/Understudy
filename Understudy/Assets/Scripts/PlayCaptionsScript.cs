@@ -36,6 +36,11 @@ public class PlayCaptionsScript : MonoBehaviour
         StartCoroutine(IncrementIndex());
     }
 
+    private void OnDisable()
+    {
+        index++;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -45,11 +50,8 @@ public class PlayCaptionsScript : MonoBehaviour
             {
                 gameObject.SetActive(false);
             }
-            else
-            {
-                lineText.text = chosenLines[index];
-            }
         }
+        lineText.text = chosenLines[index];
     }
 
     public IEnumerator IncrementIndex()
@@ -59,8 +61,4 @@ public class PlayCaptionsScript : MonoBehaviour
         StartCoroutine(IncrementIndex());
     }
 
-    public void ForceIncrementIndex()
-    {
-        index++;
-    }
 }

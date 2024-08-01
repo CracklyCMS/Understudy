@@ -3056,10 +3056,18 @@ MonoBehaviour:
   timer: {fileID: 219101166}
   lineText: {fileID: 1477217966}
   act1Lines:
-  - This text box will tell the story of the play outside of the battles.
-  - A new line appears every 5 seconds currently.
-  - These captions continue until there are no more lines in the array!
-  - Which will be right after this.
+  - Before humans, there were Gods. And before Gods, there were Titans.
+  - One day, a Titan named Kronos gave birth to a God named Zeus and his siblings.
+    Zeus and his father... didn't particularly like each other, and so one day baby
+    Zeus declared war.
+  - The Titans were so positive they were going to win, all but one; Prometheus,
+    the Titan of fire and supreme trickery. See, he had a special skill saw foresight,
+    and knew Zeus was going to win.
+  - He switched sides with his brother Epimetheus and won the war. All the Titans
+    got taken away but them, and since Zeus liked them gave the two tasks.
+  - Epimetheus, the task of creating creatures on Earth, and Prometheus the greatest
+    task of them all; creating us, humans! And so now, we are here today and Prometheus
+    is starting to go haywire...
   act2Lines:
   - Now we're in act 2!
   - It's pretty similar to 1 right now.
@@ -3827,7 +3835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.size
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.size
@@ -3835,11 +3843,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[0]
-      value: What a cool mechanic!
+      value: Well, yes but-
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[1]
-      value: It's so impressive!
+      value: That's Spring... do you know how seasons work??
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Options.Array.data[0]
@@ -3851,15 +3859,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[0]
-      value: 'NPC: This is an example dialogue battle. (Press Space to Continue)'
+      value: 'Zeus: What are you doing?'
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[1]
-      value: 'Player: I see that.'
+      value: 'Prometheus: They look like they need water.'
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[2]
-      value: 'NPC: Well what else do you have to say?'
+      value: 'Zeus: They? Oh, your clay creatures?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act1Dialogue.Array.data[3]
+      value: 'Prometheus: I call them humans!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act1Dialogue.Array.data[4]
+      value: 'Zeus: Yes, yes, "humans". Why must they need water? They already have
+        rivers and oceans.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act1Dialogue.Array.data[5]
+      value: 'Prometheus: Well, their crops are starting to die.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act1Dialogue.Array.data[6]
+      value: 'Zeus: Isn''t that supposed to happen?'
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[0]
@@ -4999,8 +5024,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Default
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52bf38799a4e4a44f87d08964c231ca3, type: 2}
+  m_sharedMaterial: {fileID: -3101700794633949065, guid: 52bf38799a4e4a44f87d08964c231ca3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5024,8 +5049,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5306,8 +5331,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -450}
-  m_SizeDelta: {x: 1300, y: 50}
+  m_AnchoredPosition: {x: 10, y: -450}
+  m_SizeDelta: {x: 1350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1477217966
 MonoBehaviour:
@@ -5331,8 +5356,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: LINE 1 OF THE PLAY
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52bf38799a4e4a44f87d08964c231ca3, type: 2}
+  m_sharedMaterial: {fileID: -3101700794633949065, guid: 52bf38799a4e4a44f87d08964c231ca3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

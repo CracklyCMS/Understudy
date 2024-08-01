@@ -66,7 +66,7 @@ public class MainstageTimer : MonoBehaviour
 
         currentTime = seconds;
 
-        if(seconds == 40)
+        if(seconds == 35)
         {
             lineCue1.transform.position = player.transform.position;
         }
