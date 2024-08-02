@@ -28,6 +28,10 @@ public class PlayerScript : MonoBehaviour
         {
             ManageMovement();
         }
+        else
+        {
+            movement = Vector2.zero;
+        }
     }
 
     private void FixedUpdate()

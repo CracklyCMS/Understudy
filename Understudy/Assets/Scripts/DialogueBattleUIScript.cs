@@ -9,7 +9,7 @@ public class DialogueBattleUIScript : MonoBehaviour
 {
     public PlayerScript player;
     public SpotlightScript spotlight;
-    public Camera gameCamera;
+    public CameraScript gameCamera;
     public TextMeshProUGUI lineText;
     public TextMeshProUGUI controlsText;
     public Image leftChoice;
@@ -20,6 +20,7 @@ public class DialogueBattleUIScript : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public MainstageTimer mainstageTimer;
     public PlayCaptionsScript playCaptions;
+    public GameObject zeus;
     public string[] chosenDialogue;
     public string[] chosenOptions;
 
@@ -37,19 +38,19 @@ public class DialogueBattleUIScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //RIGHT
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetButtonDown("Cancel")) //RIGHT
         {
             rightChoice.color = new Color(0, 0.5f, 0.1f);
             leftChoice.color = new Color(0.5f, 0, 0);
             print("RIGHT CHOICE");
         }
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) //LEFT
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)|| Input.GetButtonDown("Jump")) //LEFT
         {
             rightChoice.color = new Color(0.5f, 0, 0);
             leftChoice.color = new Color(0, 0.5f, 0.1f);
             print("LEFT CHOICE:");
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Submit"))
         {
             if(dialogueIndex < (chosenDialogue.Length - 1))
             {
@@ -69,12 +70,15 @@ public class DialogueBattleUIScript : MonoBehaviour
             else
             {
                 //RESETTING EVERYTHING
+                zeus.SetActive(false);
                 player.canMove = true;
-                spotlight.canMove = true;
+                spotlight.gameObject.SetActive(true);
                 playCaptions.gameObject.SetActive(true);
-                //playCaptions.ForceIncrementIndex();
+                leftChoice.color = new Color(0.5f, 0, 0);
+                rightChoice.color = new Color(0.5f, 0, 0);
                 mainstageTimer.timerIsRunning = true;
-                gameCamera.orthographicSize = 5;
+                gameCamera.shouldUpdate = true;
+                gameCamera.GetComponent<Camera>().orthographicSize = 5;
                 lineText.gameObject.SetActive(false);
                 controlsText.gameObject.SetActive(false);
                 leftChoice.gameObject.SetActive(false);

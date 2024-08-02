@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class LineCueScript : MonoBehaviour
 {
-    public Camera gameCamera;
+    public CameraScript gameCamera;
     public PlayerScript player;
     public SpotlightScript spotlight;
     public DialogueBattleUIScript lines;
     public MainstageTimer mainstageTimer;
     public Canvas playCaptions;
     public GameManager gameManager;
+    public GameObject zeus;
     public string[] act1Dialogue;
     public string[] act1Options;
     public string[] act2Dialogue;
@@ -24,13 +25,17 @@ public class LineCueScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //ENABLE AND DISABLE SPECIFIC GAME OBJECTS
+        zeus.SetActive(true);
         player.canMove = false;
         player.rb.velocity = Vector3.zero;
-        spotlight.canMove = false;
+        player.transform.position = new Vector3(-2.25f, 0.5f, 0);
+        spotlight.gameObject.SetActive(false);
         lines.gameObject.SetActive(true);
         playCaptions.gameObject.SetActive(false);
         mainstageTimer.timerIsRunning = false;
-        gameCamera.orthographicSize = 3;
+        gameCamera.shouldUpdate = false;
+        gameCamera.GetComponent<Camera>().orthographicSize = 3;
+        gameCamera.transform.position = new Vector3(0, 0, -10);
         //SET TEXT
         if (gameManager.actNumber == 1)
         {

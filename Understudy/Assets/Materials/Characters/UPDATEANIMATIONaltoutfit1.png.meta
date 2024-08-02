@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 31c7ca6d2a0a0bd4aaf59e270610224b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 768
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a124f646ecc8ff344b86629d1b83f456
+      internalID: 1283765193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 768
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e905611f61f62c4983c9a5bf6d63833
+      internalID: 2004308504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_2
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 768
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a4c763ec5e9ed4f8c5841381579b71
+      internalID: 918752135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_3
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 768
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37769de9ced2c1140b3f4eb7c6c5cd08
+      internalID: -277366545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_4
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 768
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a4b66335578284cb756aa2a72edaaf
+      internalID: 385500280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 576
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0005bfbd5b7616c4ea53ca3c585d07f2
+      internalID: -1965876330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 576
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06248f4915b52d04cade436f7affbc2c
+      internalID: -612473414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_7
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 576
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf840ec49580df438ccbf9fba5b3dcd
+      internalID: -831969305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_8
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 576
+        width: 140
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaa4f3f3e90f1544a4c0dbe157aa331
+      internalID: -1261681276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_9
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 576
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d878d8310fe9140bfcca256cb240e0
+      internalID: -1121074246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 384
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14403ca52d90e2c49a5ae226accc5d4d
+      internalID: -949590856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 384
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b8a056bac449c4fac7f398e409ebee
+      internalID: 428151358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_12
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 384
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f7f4145e399d94db202b240a53a25a
+      internalID: 275372256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_13
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 384
+        width: 143
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579d198313eea5a43a892145f9c4be4c
+      internalID: 456646552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_14
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 384
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56b70086e6b4c749964e8b308ddd961
+      internalID: 1723449612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 192
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0874e5dd983d5e2408ce63e2f7521359
+      internalID: -1353035506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_16
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 192
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4e3adfecfdffa4b938c7a90686e01a
+      internalID: -277575795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_17
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 192
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05d39776c80a0241bd0fc1677f6dbbb
+      internalID: 1315623670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_18
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 192
+        width: 141
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364178f670a8a594e85893fe9d3e7c00
+      internalID: 1779735151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_19
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 192
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd80c06d4ad2dc41be9956aa67a6a46
+      internalID: 1102848696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_20
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8831242777509945a1cbd8b9f77390c
+      internalID: -1491430304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderstudyMCUPDATEDALTOUTFIT_21
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 158
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd808466ebb01644382d3c0b7fd7876c
+      internalID: 1340913441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UnderstudyMCUPDATEDALTOUTFIT_0: 1283765193
+      UnderstudyMCUPDATEDALTOUTFIT_1: 2004308504
+      UnderstudyMCUPDATEDALTOUTFIT_10: -949590856
+      UnderstudyMCUPDATEDALTOUTFIT_11: 428151358
+      UnderstudyMCUPDATEDALTOUTFIT_12: 275372256
+      UnderstudyMCUPDATEDALTOUTFIT_13: 456646552
+      UnderstudyMCUPDATEDALTOUTFIT_14: 1723449612
+      UnderstudyMCUPDATEDALTOUTFIT_15: -1353035506
+      UnderstudyMCUPDATEDALTOUTFIT_16: -277575795
+      UnderstudyMCUPDATEDALTOUTFIT_17: 1315623670
+      UnderstudyMCUPDATEDALTOUTFIT_18: 1779735151
+      UnderstudyMCUPDATEDALTOUTFIT_19: 1102848696
+      UnderstudyMCUPDATEDALTOUTFIT_2: 918752135
+      UnderstudyMCUPDATEDALTOUTFIT_20: -1491430304
+      UnderstudyMCUPDATEDALTOUTFIT_21: 1340913441
+      UnderstudyMCUPDATEDALTOUTFIT_3: -277366545
+      UnderstudyMCUPDATEDALTOUTFIT_4: 385500280
+      UnderstudyMCUPDATEDALTOUTFIT_5: -1965876330
+      UnderstudyMCUPDATEDALTOUTFIT_6: -612473414
+      UnderstudyMCUPDATEDALTOUTFIT_7: -831969305
+      UnderstudyMCUPDATEDALTOUTFIT_8: -1261681276
+      UnderstudyMCUPDATEDALTOUTFIT_9: -1121074246
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
