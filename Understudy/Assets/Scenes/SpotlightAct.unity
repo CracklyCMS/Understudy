@@ -7113,11 +7113,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[0]
-      value: Something off script.
+      value: Something on script.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[1]
-      value: Something on script.
+      value: Something off script.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Options.Array.data[0]
