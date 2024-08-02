@@ -34,7 +34,7 @@ public class ChangingRoomUIScript : MonoBehaviour
         {
             currentOutfit.sprite = outfitSprites[outfitIndex];
             outfitIndex++;
-            if (outfitIndex == 2)
+            if (outfitIndex == 3)
             {
                 outfitIndex = 0;
             }
