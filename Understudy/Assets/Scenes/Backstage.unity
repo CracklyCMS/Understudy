@@ -2268,11 +2268,11 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
-      value: This is my default dialogue!
+      value: Get ready! You're on next!
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
-      value: This is my dialogue for a diff outfit!
+      value: Hey, that's not the right outfit.
       objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name
@@ -5014,11 +5014,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7534956891651178103, guid: 53dcf4fb164eb274cb5bf6abd6397b34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.25
+      value: -8.43
       objectReference: {fileID: 0}
     - target: {fileID: 7534956891651178103, guid: 53dcf4fb164eb274cb5bf6abd6397b34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.36
+      value: -0.93
       objectReference: {fileID: 0}
     - target: {fileID: 7534956891651178103, guid: 53dcf4fb164eb274cb5bf6abd6397b34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9410,7 +9410,7 @@ Transform:
   m_GameObject: {fileID: 1205196277}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.85, y: -4.98, z: 0}
+  m_LocalPosition: {x: 15.02, y: -5.35, z: 0}
   m_LocalScale: {x: 1, y: 5.0323677, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14120,90 +14120,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6136490884894939571, guid: 88f6fc90388fd9d479da543c02ff964d, type: 3}
   m_PrefabInstance: {fileID: 67128563}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2023548790
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2023548792}
-  - component: {fileID: 2023548791}
-  m_Layer: 0
-  m_Name: backstageBG
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &2023548791
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023548790}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -721596907
-  m_SortingLayer: -3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ea4b26db15a2e8a438630a5744715cf4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 6.99, y: 5.68}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &2023548792
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023548790}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.55, y: 0.55, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2033424043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14639,11 +14555,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4023619421404671644, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: x
-      value: -5.2
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4023619421404671644, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: y
-      value: -2.48
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 4023619421404671644, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: player
@@ -14663,7 +14579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4023619421404671644, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: rightXBound
-      value: 4.5
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 4023619421404671644, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: shouldUpdate
@@ -14675,7 +14591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9135488960023465606, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.48
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 9135488960023465606, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15544,11 +15460,11 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
-      value: This is my default dialogue!
+      value: Are you sure you're up for this?
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
-      value: This is my dialogue for a diff outfit!
+      value: What are you doing?
       objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name
@@ -15765,11 +15681,11 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
-      value: Hi this is what I say in the first act.
+      value: Good luck, I think you'll need it.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
-      value: This is what I say if a diff outfit was chosen. Idk if I like it.
+      value: Jeez, you're really doing this huh.
       objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name
@@ -15854,7 +15770,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 580134393}
-  - {fileID: 2023548792}
   - {fileID: 2064208372}
   - {fileID: 984518800615003123}
   - {fileID: 275938700}
