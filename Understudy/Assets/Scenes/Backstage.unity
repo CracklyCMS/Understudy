@@ -14350,7 +14350,7 @@ Animator:
   m_GameObject: {fileID: 580134394}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: badf6dbb97462cf4db95b02c0196dcb3, type: 2}
+  m_Controller: {fileID: 9100000, guid: a3a6480c1cd35e14989576ccbcfe33d1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14672,11 +14672,11 @@ MonoBehaviour:
   outfitSprites:
   - {fileID: 21300000, guid: 6975a4efcf76f3f439d2bf54e579ac4e, type: 3}
   - {fileID: 21300000, guid: f1ba1fec54317304f86bca85e586cbba, type: 3}
-  - {fileID: 21300000, guid: 3be717c9071e33f4fa5b2dde41c5bed8, type: 3}
+  - {fileID: 21300000, guid: a02c29dd9c69aff45a0a12d5c87fa365, type: 3}
   outfitAnims:
   - {fileID: 9100000, guid: a816ab8024c217649a3af152a0155354, type: 2}
   - {fileID: 9100000, guid: badf6dbb97462cf4db95b02c0196dcb3, type: 2}
-  - {fileID: 9100000, guid: 507dd2ee70a20d84ea10be3e5a228d43, type: 2}
+  - {fileID: 9100000, guid: a3a6480c1cd35e14989576ccbcfe33d1, type: 2}
 --- !u!1001 &2064208372
 PrefabInstance:
   m_ObjectHideFlags: 0
