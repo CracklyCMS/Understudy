@@ -18,7 +18,7 @@ public class GameOverScreenScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(player.faithfulness <= 1)
+        if(player.faithfulness <= 75)
         {
             winCondition.text = "You decided to stay off script by avoiding the spotlight and picking off script lines.";
         }

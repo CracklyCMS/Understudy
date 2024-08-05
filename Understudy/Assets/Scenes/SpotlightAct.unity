@@ -570,6 +570,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &156767118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156767119}
+  - component: {fileID: 156767121}
+  - component: {fileID: 156767122}
+  m_Layer: 5
+  m_Name: SpeakerIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &156767119
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156767118}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06666667, y: 0.4, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2051192616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -39, y: 12.488037}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &156767121
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156767118}
+  m_CullTransparentMesh: 1
+--- !u!114 &156767122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156767118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6975a4efcf76f3f439d2bf54e579ac4e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &187774548
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,6 +856,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   currentTime: 0
   playCaptions: {fileID: 748703814}
+  hephaestusSprite: {fileID: 0}
 --- !u!1 &240446639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,6 +1109,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &301072860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 301072862}
+  - component: {fileID: 301072861}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &301072861
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301072860}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9d3368f3460d75842a35eb89eb92c4c0, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.05
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &301072862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301072860}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &340650586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1903,11 +2107,17 @@ MonoBehaviour:
   rightChoiceText: {fileID: 1827232638}
   dialogueBox: {fileID: 2051192618}
   dialogueText: {fileID: 1284330290}
+  currentSpeaker: {fileID: 1482934671}
+  currentSpeakerIcon: {fileID: 156767122}
   mainstageTimer: {fileID: 219101166}
   playCaptions: {fileID: 748703816}
   zeus: {fileID: 1149255111}
   chosenDialogue: []
   chosenOptions: []
+  chosenIsPlayerTalking: 
+  chosenWhoName: 
+  chosenWhoSprite: {fileID: 0}
+  prometheusSprite: {fileID: 21300000, guid: 6975a4efcf76f3f439d2bf54e579ac4e, type: 3}
 --- !u!1 &496158922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,7 +2237,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 450, y: 125}
+  m_SizeDelta: {x: 675, y: 175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &499698488
 MonoBehaviour:
@@ -2280,7 +2490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: 450}
+  m_AnchoredPosition: {x: 75, y: 600}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &537783872
@@ -3142,6 +3352,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &736588296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 736588297}
+  - component: {fileID: 736588299}
+  - component: {fileID: 736588298}
+  m_Layer: 5
+  m_Name: DividerLine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &736588297
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736588296}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06666667, y: 0.4, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2051192616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -27.39, y: -1.6959839}
+  m_SizeDelta: {x: 10, y: 213}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &736588298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736588296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &736588299
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736588296}
+  m_CullTransparentMesh: 1
 --- !u!1 &748703811
 GameObject:
   m_ObjectHideFlags: 0
@@ -3263,24 +3548,61 @@ MonoBehaviour:
   timer: {fileID: 219101166}
   lineText: {fileID: 1477217966}
   act1Lines:
-  - Before humans, there were Gods. And before Gods, there were Titans.
-  - One day, a Titan named Kronos gave birth to a God named Zeus and his siblings.
-    Zeus and his father... didn't particularly like each other, and so one day baby
+  - Before humans, there were Gods. And before Gods, there were Titans. One day,
+    a Titan named Kronos gave birth to a God named Zeus and his siblings.
+  - Zeus and his father... didn't particularly like each other, and so one day baby
     Zeus declared war.
-  - The Titans were so positive they were going to win, all but one; Prometheus,
-    the Titan of fire and supreme trickery. See, he had a special skill saw foresight,
-    and knew Zeus was going to win.
-  - He switched sides with his brother Epimetheus and won the war. All the Titans
-    got taken away but them, and since Zeus liked them gave the two tasks.
-  - Epimetheus, the task of creating creatures on Earth, and Prometheus the greatest
-    task of them all; creating us, humans! And so now, we are here today and Prometheus
-    is starting to go haywire...
+  - Prometheus, the Titan of fire and supreme trickery, had foresight and knew Zeus
+    was going to win. He switched sides with his brother Epimetheus and won the war.
+  - Zeus then gave the two tasks, Epimetheus, the task of creating creatures on Earth,
+    and Prometheus creating humans. Although now it is starting to go haywire...
+  - 'In the midst of Zeus'' groveling, Prometheus comes up with something that can
+    change the lives of humans. Fire. Giving fire to his creatures will allow them
+    to do oh so much more. '
+  - And so, Prometheus decided; he was going to take fire from the Gods. But how?
+    Well, the Titan already formulated a plan that very same night.
+  - The only one who could make such divine displays of power and elegance would
+    be none other than the god of craftsmanship and blacksmithing; Hephaestus.
+  - The plan is to take the fire right from under Hephaestus' nose while he's not
+    looking. This Plan A was oh so close to working, until he was spotted! At least
+    he had a Plan B; try to convince the God with his words.
+  - Prometheus insists he would do nothing of the sort, and Hephaestus reluctantly
+    agrees to show him his work.
+  - With Hephaestus' back turned, Prometheus steals just a small speck of the fire.
+    Now, the easy part of his plan. Once Prometheus leaves the workshop, he has to
+    find a way to cover the fire, and fast.
+  - And so, he finds a beautiful intricate fennel stalk, hollows it out, and places
+    the fire in there. He sneaks down from Olympus, and plants it in the center of
+    a village.
+  - No one was supposed to be awake, but one small human saw how the stalk glowed
+    in the night, and their eyes filled with wonder. Prometheus stays there for a
+    while watching the human be amazed at the fire, and then left before the clouds
+    overcame the sky.
   act2Lines:
-  - Now we're in act 2!
-  - It's pretty similar to 1 right now.
-  - But at least the dialogue is different!
-  - Act 2 will eventually have more obstacles for the player.
-  - So stay tuned!
+  - It's a new day. The day of the party where all Gods are meant to dine and feast
+    together. The day where Prometheus sees if his trickery has worked.
+  - The fire in of itself was huge - nowadays it would be the size of a large campfire
+    - so small part of it being gone should have no effect on anything. It should
+    be unnoticeable.
+  - "Prometheus\u2019 plan was perfect, but he was too hopeful, too childish, and
+    didn\u2019t think with his forethought that maybe just maybe Zeus is smart as
+    well. He is the king of the Gods after all."
+  - Prometheus walks into the center of Olympus. Everything is set up, but the fire.
+  - 'Prometheus is taken away and clouds begin to form around him. '
+  - And then, they begin to darken. Suddenly a loud sound ripples through them and
+    Prometheus is knocked out cold.
+  - He is flown away; far from Olympus, and yet still high up in the sky, perhaps
+    even higher. Zeus places him atop of a mountain, surrounded by clouds that one
+    cannot see what is below.
+  - Prometheus wakes up, chained, and unable to set himself free.
+  - "Prometheus leaves Zeus with these final words: \"It\u2019s funny how you call
+    this mercy! I never understood why you treated me and my brother different from
+    the rest of the Gods; because we are Titans, perhaps?\""
+  - '"Have you forgetten that we are still the same blood, that you are born from
+    a Titan. There is no difference between us in that sense."'
+  - '"I  have no regrets. I saw the humans dance, and feast together like family."'
+  - '"You said before that I treat them like my children, and that is because they
+    are."'
 --- !u!1 &761616065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4113,6 +4435,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 219101166}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: whoIsPlayerTalkingTo1
+      value: Zeus
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: whoIsPlayerTalkingTo2
+      value: Zeus
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -4122,68 +4452,136 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.size
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.size
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[0]
-      value: Well, yes but-
+      value: I understand.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[1]
-      value: That's Spring... do you know how seasons work??
+      value: For some who's the "King of the Gods" it's rather surprising you were
+        fooled by bones instead of meat.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Options.Array.data[0]
-      value: Sure do!
+      value: I'm sorry! I didn't think it would be noticeable! It was just a speck.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Options.Array.data[1]
-      value: It's alright.
+      value: "Yes! I know what I have done, but look at the humans, they\u2019re
+        dancing. Dancing!"
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[0]
-      value: 'Zeus: What are you doing?'
+      value: They don't know any better.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[1]
-      value: 'Prometheus: They look like they need water.'
+      value: And you don't know any better as well. For someone who has forethought,
+        you aren't thinking everything through.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[2]
-      value: 'Zeus: They? Oh, your clay creatures?'
+      value: You're better than this. You and brother have been great creating life
+        on Earth, but remember, you are Titans, practically Gods, not humans.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[3]
-      value: 'Prometheus: I call them humans!'
+      value: You wouldn't want me to strike you down now would you?And don't worry
+        you can keep playing with them, just not as much.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[4]
-      value: 'Zeus: Yes, yes, "humans". Why must they need water? They already have
-        rivers and oceans.'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[5]
-      value: 'Prometheus: Well, their crops are starting to die.'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[6]
-      value: 'Zeus: Isn''t that supposed to happen?'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[0]
-      value: 'NPC: Hey we''re in the second act now.'
+      value: Who do you think I am?
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[1]
-      value: 'Player: So it seems.'
+      value: What?
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[2]
-      value: 'NPC: Do you like the change in dialogue?'
+      value: I said, who do you think I am?
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[3]
+      value: You are the king of the Gods.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[4]
+      value: Liar. You must think of me as a fool if you didn't expect me to notice
+        your trickery!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[5]
+      value: Hephaestus work has been nothing short of perfect. Now imagine his surprise
+        when his measures were off by a tiny speck, and mine when I saw the humans
+        had fire!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[6]
+      value: Do you have any idea what you've done?
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[7]
+      value: I trusted you! You were supposed to be different from the other Titans.
+        You have forced my hand - this cannot go unpunished.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking1.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking2.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: whoIsPlayerTalkingToSprite1
+      value: 
+      objectReference: {fileID: 21300000, guid: 3be717c9071e33f4fa5b2dde41c5bed8, type: 3}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: whoIsPlayerTalkingToSprite2
+      value: 
+      objectReference: {fileID: 21300000, guid: 3be717c9071e33f4fa5b2dde41c5bed8, type: 3}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking1.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking1.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking1.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking1.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking2.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking2.Array.data[3]
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5508,8 +5906,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.6959839}
-  m_SizeDelta: {x: 1000, y: 50}
+  m_AnchoredPosition: {x: 11, y: 0}
+  m_SizeDelta: {x: 1100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1306544181
 GameObject:
@@ -5823,6 +6221,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477217964}
+  m_CullTransparentMesh: 1
+--- !u!1 &1482934669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1482934670}
+  - component: {fileID: 1482934672}
+  - component: {fileID: 1482934671}
+  m_Layer: 5
+  m_Name: SpeakerName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1482934670
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482934669}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06666667, y: 0.4, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2051192616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -39, y: -33}
+  m_SizeDelta: {x: 325, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1482934671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482934669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Prometheus
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c17bb7157d8f64347b3a3f94f238d1fb, type: 2}
+  m_sharedMaterial: {fileID: 223741477369933368, guid: c17bb7157d8f64347b3a3f94f238d1fb, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1482934672
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482934669}
   m_CullTransparentMesh: 1
 --- !u!1 &1503587312
 GameObject:
@@ -7096,6 +7630,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 219101166}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: whoIsPlayerTalkingTo1
+      value: Hephaestus
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: whoIsPlayerTalkingTo2
+      value: Zeus
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -7105,51 +7647,113 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[0]
-      value: Something off script.
+      value: Pleeeeeease! Please, please please!!There has to be some way I can change
+        your mind!
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[1]
-      value: Something on script.
+      value: 'I AM the Titan of fire, I could probably help with your work. Can''t
+        I get to know you even more, maybe even get your number? '
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Options.Array.data[0]
-      value: Yes.
+      value: I'm sorry, King of the Gods. It won't happen again.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Options.Array.data[1]
-      value: No.
+      value: I saw my humans truly happy. That is all I could ever wish for, even
+        if I could never see them again.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[0]
-      value: 'NPC: Each act will have 2 battles at set times.'
+      value: What are you doing?
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[1]
-      value: 'Player: That''s right!'
+      value: Nothing! I'm just admiring your craftsmanship. What is this for?
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[2]
-      value: 'NPC: And your line options are...?'
+      value: It's nothing for you to know.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act1Dialogue.Array.data[3]
+      value: Listen, I just want to see how-
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act1Dialogue.Array.data[4]
+      value: This is for Zeus. Now unless you want to get smitten down like the rest
+        of the Titans I suggest you back off. Get out.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act1Dialogue.Array.data[5]
+      value: I'd have to be an idiot to let a Titan roam around my place. Who knows
+        what you'll do, you could put an arrow through my heart!
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[0]
-      value: 'NPC: So what happens after this act?'
+      value: I hate it has to come to this. Consider this as my mercy, instead of
+        throwing you in tartarus like the rest of your kind.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[1]
-      value: 'Player: The game ends, with one of two possible endings!'
+      value: What is this?
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[2]
-      value: 'NPC: Oh wow, are you satisfied with the narrative direction?'
+      value: This is your punishment. You are to stay at the top of this mountain.
+        You have coddled the humans for far too long, so you must be separated.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[3]
+      value: Until you have changed, you will be chained here for the rest of eternity.
+        You will never see them again.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[4]
+      value: I cannot trust you any longer. I will come occasionally to see if you
+        can ever change. Until then, farewell.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[5]
+      value: I cannot trust you any longer. I will come occasionally to see if you
+        can ever change. Until then, farewell.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking1.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking2.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: whoIsPlayerTalkingToSprite1
+      value: 
+      objectReference: {fileID: 21300000, guid: 937a1eb8b3aaa6840aa0bb1bf1b9de22, type: 3}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: whoIsPlayerTalkingToSprite2
+      value: 
+      objectReference: {fileID: 21300000, guid: 3be717c9071e33f4fa5b2dde41c5bed8, type: 3}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking1.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking1.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking2.Array.data[1]
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7191,7 +7795,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 450, y: 125}
+  m_SizeDelta: {x: 675, y: 175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827232638
 MonoBehaviour:
@@ -7539,7 +8143,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: 450}
+  m_AnchoredPosition: {x: -100, y: 600}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1971233653
@@ -8006,6 +8610,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1284330292}
+  - {fileID: 736588297}
+  - {fileID: 1482934670}
+  - {fileID: 2100077372}
+  - {fileID: 156767119}
   m_Father: {fileID: 484524494}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -8088,6 +8696,140 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2100077371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2100077372}
+  - component: {fileID: 2100077374}
+  - component: {fileID: 2100077373}
+  m_Layer: 5
+  m_Name: Controls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2100077372
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100077371}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.06666667, y: 0.4, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2051192616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 25, y: -60}
+  m_SizeDelta: {x: 850, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2100077373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100077371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Space Bar or A Button to Continue
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c17bb7157d8f64347b3a3f94f238d1fb, type: 2}
+  m_sharedMaterial: {fileID: 223741477369933368, guid: c17bb7157d8f64347b3a3f94f238d1fb, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 35
+  m_fontSizeBase: 35
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2100077374
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100077371}
+  m_CullTransparentMesh: 1
 --- !u!1 &2122319915
 GameObject:
   m_ObjectHideFlags: 0
@@ -8296,7 +9038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9135488960023465606, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 9135488960023465606, guid: 2f30147817f9a47408c120c32b37f5a6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8439,3 +9181,4 @@ SceneRoots:
   - {fileID: 514629971}
   - {fileID: 748703815}
   - {fileID: 1343128113}
+  - {fileID: 301072862}
