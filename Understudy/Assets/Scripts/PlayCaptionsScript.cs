@@ -44,7 +44,7 @@ public class PlayCaptionsScript : MonoBehaviour
         }
         else
         {
-            //index++;
+            index++;
         }
     }
 

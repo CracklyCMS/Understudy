@@ -32,6 +32,8 @@ public class DialogueBattleUIScript : MonoBehaviour
 
 
     private int dialogueIndex = 0;
+    private bool isonScript;
+    private bool optionChoosen = false;
 
     // Start is called before the first frame update
     public void SetParameters()
@@ -67,22 +69,28 @@ public class DialogueBattleUIScript : MonoBehaviour
         {
             rightChoice.color = new Color(0, 0.5f, 0.1f);
             leftChoice.color = new Color(0.5f, 0, 0);
+            optionChoosen = true;
+            isonScript = false;
             print("RIGHT CHOICE");
         }
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)|| Input.GetButtonDown("Jump")) //LEFT
         {
             rightChoice.color = new Color(0.5f, 0, 0);
             leftChoice.color = new Color(0, 0.5f, 0.1f);
-            print("LEFT CHOICE:");
+            optionChoosen = true;
+            isonScript = true;
+            print("LEFT CHOICE");
         }
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Submit"))
         {
+            //PRE-CHOICE DIALOGUE
             if(dialogueIndex < (chosenDialogue.Length - 2))
             {
                 dialogueIndex++;
                 print(dialogueIndex);
                 dialogueText.text = chosenDialogue[dialogueIndex];
             }
+            //CHOOSING OPTION SCREEN
             else if (dialogueIndex == (chosenDialogue.Length - 2))
             {
                 dialogueIndex++;
@@ -93,8 +101,14 @@ public class DialogueBattleUIScript : MonoBehaviour
                 dialogueBox.gameObject.SetActive(false);
                 print(dialogueIndex);
             }
-            else if (dialogueIndex == (chosenDialogue.Length - 1))
+            //OPPONENT'S RESPONSE
+            else if ((dialogueIndex == (chosenDialogue.Length - 1)) && optionChoosen)
             {
+                if(isonScript) 
+                {
+                    player.faithfulness += 10;
+                    print("FAITHFUL");
+                }
                 dialogueText.text = chosenDialogue[dialogueIndex];
                 dialogueIndex++;
                 lineText.gameObject.SetActive(false);
@@ -104,7 +118,8 @@ public class DialogueBattleUIScript : MonoBehaviour
                 dialogueBox.gameObject.SetActive(true);
                 print(dialogueIndex);
             }
-            else
+            //CLOSE
+            else if((dialogueIndex == chosenDialogue.Length) && optionChoosen)
             {
                 //RESETTING EVERYTHING
                 zeus.SetActive(false);
@@ -123,6 +138,8 @@ public class DialogueBattleUIScript : MonoBehaviour
                 dialogueBox.gameObject.SetActive(true);
                 Array.Clear(chosenOptions, 0, chosenOptions.Length);
                 Array.Clear(chosenDialogue, 0, chosenDialogue.Length);
+                isonScript = false;
+                optionChoosen = false;
                 gameObject.SetActive(false);
             }
         }

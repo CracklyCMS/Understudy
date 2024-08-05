@@ -2260,7 +2260,7 @@ PrefabInstance:
       objectReference: {fileID: 279384193}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: act2Dialogue
-      value: This is my dialogue for the 2nd act!
+      value: Doing good out there?
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent
@@ -15588,7 +15588,7 @@ PrefabInstance:
       objectReference: {fileID: 279384193}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: act2Dialogue
-      value: This is my dialogue for the 2nd act!
+      value: You better not be ruining the show.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent
@@ -15809,7 +15809,7 @@ PrefabInstance:
       objectReference: {fileID: 279384193}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: act2Dialogue
-      value: This is what I say in the second act.
+      value: Nice job, I guess.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent

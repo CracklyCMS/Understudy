@@ -57,7 +57,7 @@ public class NPCScript : MonoBehaviour
             {
                 text.text = act2Dialogue;
             }
-            else if (playerOutfitChoice != 0)
+            else if (playerOutfitChoice == 1)
             {
                 text.text = diffOutfitDialogue;
             }
