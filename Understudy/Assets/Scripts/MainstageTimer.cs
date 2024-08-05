@@ -23,6 +23,7 @@ public class MainstageTimer : MonoBehaviour
     public GameManager gameManager;
     public float currentTime;
     public Canvas playCaptions;
+    public Sprite hephaestusSprite;
 
     float fadeAlpha = 0;
 
@@ -66,7 +67,7 @@ public class MainstageTimer : MonoBehaviour
 
         currentTime = seconds;
 
-        if(seconds == 35)
+        if(seconds == 40)
         {
             lineCue1.transform.position = player.transform.position;
         }

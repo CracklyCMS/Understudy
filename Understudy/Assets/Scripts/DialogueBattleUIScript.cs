@@ -18,11 +18,18 @@ public class DialogueBattleUIScript : MonoBehaviour
     public TextMeshProUGUI rightChoiceText;
     public Image dialogueBox;
     public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI currentSpeaker;
+    public Image currentSpeakerIcon;
     public MainstageTimer mainstageTimer;
     public PlayCaptionsScript playCaptions;
     public GameObject zeus;
     public string[] chosenDialogue;
     public string[] chosenOptions;
+    public bool[] chosenIsPlayerTalking;
+    public string chosenWhoName;
+    public Sprite chosenWhoSprite;
+    public Sprite prometheusSprite;
+
 
     private int dialogueIndex = 0;
 
@@ -35,9 +42,27 @@ public class DialogueBattleUIScript : MonoBehaviour
         dialogueText.text = chosenDialogue[dialogueIndex];
     }
 
+    public void HandleCurrentSpeaker()
+    {
+        if ((dialogueIndex < chosenDialogue.Length))
+        {
+            if (chosenIsPlayerTalking[dialogueIndex])
+            {
+                currentSpeaker.text = "Prometheus";
+                currentSpeakerIcon.sprite = prometheusSprite;
+            }
+            else
+            {
+                currentSpeaker.text = chosenWhoName;
+                currentSpeakerIcon.sprite = chosenWhoSprite;
+            }
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+        HandleCurrentSpeaker();
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetButtonDown("Cancel")) //RIGHT
         {
             rightChoice.color = new Color(0, 0.5f, 0.1f);
@@ -52,13 +77,13 @@ public class DialogueBattleUIScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Submit"))
         {
-            if(dialogueIndex < (chosenDialogue.Length - 1))
+            if(dialogueIndex < (chosenDialogue.Length - 2))
             {
                 dialogueIndex++;
                 print(dialogueIndex);
                 dialogueText.text = chosenDialogue[dialogueIndex];
             }
-            else if (dialogueIndex == (chosenDialogue.Length - 1))
+            else if (dialogueIndex == (chosenDialogue.Length - 2))
             {
                 dialogueIndex++;
                 lineText.gameObject.SetActive(true);
@@ -66,6 +91,18 @@ public class DialogueBattleUIScript : MonoBehaviour
                 leftChoice.gameObject.SetActive(true);
                 rightChoice.gameObject.SetActive(true);
                 dialogueBox.gameObject.SetActive(false);
+                print(dialogueIndex);
+            }
+            else if (dialogueIndex == (chosenDialogue.Length - 1))
+            {
+                dialogueText.text = chosenDialogue[dialogueIndex];
+                dialogueIndex++;
+                lineText.gameObject.SetActive(false);
+                controlsText.gameObject.SetActive(false);
+                leftChoice.gameObject.SetActive(false);
+                rightChoice.gameObject.SetActive(false);
+                dialogueBox.gameObject.SetActive(true);
+                print(dialogueIndex);
             }
             else
             {

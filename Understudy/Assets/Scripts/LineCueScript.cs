@@ -12,8 +12,14 @@ public class LineCueScript : MonoBehaviour
     public Canvas playCaptions;
     public GameManager gameManager;
     public GameObject zeus;
+    public string whoIsPlayerTalkingTo1;
+    public Sprite whoIsPlayerTalkingToSprite1;
+    public bool[] isPlayerTalking1;
     public string[] act1Dialogue;
     public string[] act1Options;
+    public string whoIsPlayerTalkingTo2;
+    public Sprite whoIsPlayerTalkingToSprite2;
+    public bool[] isPlayerTalking2;
     public string[] act2Dialogue;
     public string[] act2Options;
 
@@ -41,11 +47,17 @@ public class LineCueScript : MonoBehaviour
         {
             lines.chosenDialogue = act1Dialogue;
             lines.chosenOptions = act1Options;
+            lines.chosenIsPlayerTalking = isPlayerTalking1;
+            lines.chosenWhoName = whoIsPlayerTalkingTo1;
+            lines.chosenWhoSprite = whoIsPlayerTalkingToSprite1;
         }
         else if (gameManager.actNumber == 2)
         {
             lines.chosenDialogue = act2Dialogue;
             lines.chosenOptions = act2Options;
+            lines.chosenIsPlayerTalking = isPlayerTalking1;
+            lines.chosenWhoName = whoIsPlayerTalkingTo1;
+            lines.chosenWhoSprite = whoIsPlayerTalkingToSprite1;
         }
         lines.SetParameters();
         print("DETECTED");
