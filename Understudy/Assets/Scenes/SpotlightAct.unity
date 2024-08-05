@@ -3579,11 +3579,30 @@ MonoBehaviour:
     while watching the human be amazed at the fire, and then left before the clouds
     overcame the sky.
   act2Lines:
-  - Now we're in act 2!
-  - It's pretty similar to 1 right now.
-  - But at least the dialogue is different!
-  - Act 2 will eventually have more obstacles for the player.
-  - So stay tuned!
+  - It's a new day. The day of the party where all Gods are meant to dine and feast
+    together. The day where Prometheus sees if his trickery has worked.
+  - The fire in of itself was huge - nowadays it would be the size of a large campfire
+    - so small part of it being gone should have no effect on anything. It should
+    be unnoticeable.
+  - "Prometheus\u2019 plan was perfect, but he was too hopeful, too childish, and
+    didn\u2019t think with his forethought that maybe just maybe Zeus is smart as
+    well. He is the king of the Gods after all."
+  - Prometheus walks into the center of Olympus. Everything is set up, but the fire.
+  - 'Prometheus is taken away and clouds begin to form around him. '
+  - And then, they begin to darken. Suddenly a loud sound ripples through them and
+    Prometheus is knocked out cold.
+  - He is flown away; far from Olympus, and yet still high up in the sky, perhaps
+    even higher. Zeus places him atop of a mountain, surrounded by clouds that one
+    cannot see what is below.
+  - Prometheus wakes up, chained, and unable to set himself free.
+  - "Prometheus leaves Zeus with these final words: \"It\u2019s funny how you call
+    this mercy! I never understood why you treated me and my brother different from
+    the rest of the Gods; because we are Titans, perhaps?\""
+  - '"Have you forgetten that we are still the same blood, that you are born from
+    a Titan. There is no difference between us in that sense."'
+  - '"I  have no regrets. I saw the humans dance, and feast together like family."'
+  - '"You said before that I treat them like my children, and that is because they
+    are."'
 --- !u!1 &761616065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4437,7 +4456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.size
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[0]
@@ -4450,11 +4469,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Options.Array.data[0]
-      value: Sure do!
+      value: I'm sorry! I didn't think it would be noticeable! It was just a speck.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Options.Array.data[1]
-      value: It's alright.
+      value: "Yes! I know what I have done, but look at the humans, they\u2019re
+        dancing. Dancing!"
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[0]
@@ -4489,19 +4509,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[0]
-      value: 'NPC: Hey we''re in the second act now.'
+      value: Who do you think I am?
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[1]
-      value: 'Player: So it seems.'
+      value: What?
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[2]
-      value: 'NPC: Do you like the change in dialogue?'
+      value: I said, who do you think I am?
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[3]
+      value: You are the king of the Gods.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[4]
+      value: Liar. You must think of me as a fool if you didn't expect me to notice
+        your trickery!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[5]
+      value: Hephaestus work has been nothing short of perfect. Now imagine his surprise
+        when his measures were off by a tiny speck, and mine when I saw the humans
+        had fire!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[6]
+      value: Do you have any idea what you've done?
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[7]
+      value: I trusted you! You were supposed to be different from the other Titans.
+        You have forced my hand - this cannot go unpunished.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: isPlayerTalking1.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking2.Array.size
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: whoIsPlayerTalkingToSprite1
@@ -4526,6 +4574,14 @@ PrefabInstance:
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: isPlayerTalking1.Array.data[3]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking2.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking2.Array.data[3]
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7595,7 +7651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Options.Array.data[0]
@@ -7609,11 +7665,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Options.Array.data[0]
-      value: Yes.
+      value: I'm sorry, King of the Gods. It won't happen again.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Options.Array.data[1]
-      value: No.
+      value: I saw my humans truly happy. That is all I could ever wish for, even
+        if I could never see them again.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act1Dialogue.Array.data[0]
@@ -7643,18 +7700,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[0]
-      value: 'NPC: So what happens after this act?'
+      value: I hate it has to come to this. Consider this as my mercy, instead of
+        throwing you in tartarus like the rest of your kind.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[1]
-      value: 'Player: The game ends, with one of two possible endings!'
+      value: What is this?
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: act2Dialogue.Array.data[2]
-      value: 'NPC: Oh wow, are you satisfied with the narrative direction?'
+      value: This is your punishment. You are to stay at the top of this mountain.
+        You have coddled the humans for far too long, so you must be separated.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[3]
+      value: Until you have changed, you will be chained here for the rest of eternity.
+        You will never see them again.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[4]
+      value: I cannot trust you any longer. I will come occasionally to see if you
+        can ever change. Until then, farewell.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: act2Dialogue.Array.data[5]
+      value: I cannot trust you any longer. I will come occasionally to see if you
+        can ever change. Until then, farewell.
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: isPlayerTalking1.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking2.Array.size
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
@@ -7671,6 +7749,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
       propertyPath: isPlayerTalking1.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142493314911579384, guid: 89e7ff3fb3d478a4ca6c8931f4c7a98d, type: 3}
+      propertyPath: isPlayerTalking2.Array.data[1]
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

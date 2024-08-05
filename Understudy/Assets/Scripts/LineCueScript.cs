@@ -55,9 +55,9 @@ public class LineCueScript : MonoBehaviour
         {
             lines.chosenDialogue = act2Dialogue;
             lines.chosenOptions = act2Options;
-            lines.chosenIsPlayerTalking = isPlayerTalking1;
-            lines.chosenWhoName = whoIsPlayerTalkingTo1;
-            lines.chosenWhoSprite = whoIsPlayerTalkingToSprite1;
+            lines.chosenIsPlayerTalking = isPlayerTalking2;
+            lines.chosenWhoName = whoIsPlayerTalkingTo2;
+            lines.chosenWhoSprite = whoIsPlayerTalkingToSprite2;
         }
         lines.SetParameters();
         print("DETECTED");

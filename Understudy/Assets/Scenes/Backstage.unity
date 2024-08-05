@@ -2366,7 +2366,7 @@ MonoBehaviour:
   player: {fileID: 0}
   mainCamera: {fileID: 0}
   playerFaith: 0
-  actNumber: 1
+  actNumber: 2
   outfitNumber: 0
   currentCostume: {fileID: 9100000, guid: a816ab8024c217649a3af152a0155354, type: 2}
 --- !u!4 &279384194
