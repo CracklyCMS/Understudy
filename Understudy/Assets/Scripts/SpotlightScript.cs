@@ -5,7 +5,7 @@ using UnityEngine.Experimental.GlobalIllumination;
 
 public class SpotlightScript : MonoBehaviour
 {
-    public Transform waypoint;
+    public SpotlightWaypointScript waypoint;
     public PlayerScript player;
     public float moveSpeed;
     public bool canMove;
@@ -21,11 +21,14 @@ public class SpotlightScript : MonoBehaviour
     {
         if (canMove)
         {
-            // Calculate direction to the player
-            Vector2 direction = (waypoint.position - transform.position).normalized;
+            // Calculate direction to the waypoint
+            Vector2 direction = (waypoint.transform.position - transform.position).normalized;
 
-            // Move spotlight with constant speed
-            transform.Translate(direction * moveSpeed * Time.deltaTime, Space.World);
+            if (!waypoint.inRange)
+            {
+                // Move spotlight with constant speed
+                transform.Translate(direction * moveSpeed * Time.deltaTime, Space.World);
+            }
         }
     }
 

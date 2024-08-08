@@ -16,7 +16,7 @@ public class ChangingRoomUIScript : MonoBehaviour
     public RuntimeAnimatorController[] outfitAnims;
 
     GameManager gameManager;
-    int outfitIndex = 1;
+    int outfitIndex = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -34,7 +34,7 @@ public class ChangingRoomUIScript : MonoBehaviour
         {
             currentOutfit.sprite = outfitSprites[outfitIndex];
             outfitIndex++;
-            if (outfitIndex == 3)
+            if (outfitIndex == 2)
             {
                 outfitIndex = 0;
             }

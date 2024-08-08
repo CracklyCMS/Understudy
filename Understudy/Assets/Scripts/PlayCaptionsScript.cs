@@ -28,12 +28,6 @@ public class PlayCaptionsScript : MonoBehaviour
             chosenLines = act2Lines;
         }
         lineText.text = chosenLines[index];
-        //StartCoroutine(IncrementIndex());
-    }
-
-    private void OnEnable()
-    {
-        StartCoroutine(IncrementIndex());
     }
 
     private void OnDisable()
@@ -44,28 +38,33 @@ public class PlayCaptionsScript : MonoBehaviour
         }
         else
         {
-            index++;
+            //index++;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timer.currentTime % 5 == 0)
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Submit"))
         {
-            if(index == chosenLines.Length)
+            index++;
+            if (index == chosenLines.Length)
             {
+                timer.shouldFade = true;
+                gameObject.SetActive(false);
+            }
+            if(index == 4)
+            {
+                timer.ActivateCue1();
+                gameObject.SetActive(false);
+            }
+            if(index == 8)
+            {
+                timer.ActivateCue2();
                 gameObject.SetActive(false);
             }
         }
         lineText.text = chosenLines[index];
-    }
-
-    public IEnumerator IncrementIndex()
-    {
-        yield return new WaitForSeconds(5);
-        index++;
-        StartCoroutine(IncrementIndex());
     }
 
 }

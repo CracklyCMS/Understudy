@@ -31,6 +31,11 @@ public class PlayerScript : MonoBehaviour
         else
         {
             movement = Vector2.zero;
+            float mx = 0;
+            float my = 0;
+
+            playerAnimator.SetFloat("iswalkingright", mx);
+            playerAnimator.SetFloat("iswalkingforward", my);
         }
     }
 

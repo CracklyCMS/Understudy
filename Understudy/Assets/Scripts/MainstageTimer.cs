@@ -23,14 +23,12 @@ public class MainstageTimer : MonoBehaviour
     public GameManager gameManager;
     public float currentTime;
     public Canvas playCaptions;
-    public Sprite hephaestusSprite;
+    public bool shouldFade = false;
 
     float fadeAlpha = 0;
 
     private void Start()
     {
-        // Starts the timer automatically
-        timerIsRunning = false;
         player.canMove = false;
         spotlight.gameObject.SetActive(false);
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -39,48 +37,22 @@ public class MainstageTimer : MonoBehaviour
 
     void Update()
     {
-        if (timerIsRunning)
-        {
-            if (timeRemaining > 0)
-            {
-                timeRemaining -= Time.deltaTime;
-                DisplayTime(timeRemaining);
-            }
-            else
-            {
-                Debug.Log("Time has run out!");
-                timeRemaining = 0;
-                timerIsRunning = false;
-            }
-        }
-        else if (timeRemaining == 0)
+        if (shouldFade)
         {
             FadeOut();
         }
     }
 
-    void DisplayTime(float timeToDisplay)
+    public void ActivateCue1()
     {
-        timeToDisplay += 1;
-
-        float seconds = Mathf.FloorToInt(timeToDisplay);
-
-        currentTime = seconds;
-
-        if(seconds == 40)
-        {
-            lineCue1.transform.position = player.transform.position;
-        }
-        if(seconds == 20)
-        {
-            print("LINE CUE 2");
-            lineCue2.transform.position = player.transform.position;
-        }
-
-        timeText.text = seconds.ToString() + "s";
+        lineCue1.transform.position = player.transform.position;
+    }
+    public void ActivateCue2()
+    {
+        lineCue2.transform.position = player.transform.position;
     }
 
-    void FadeOut()
+    public void FadeOut()
     {
         if(fadeAlpha < 1)
         {

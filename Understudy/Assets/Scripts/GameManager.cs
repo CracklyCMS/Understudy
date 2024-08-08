@@ -38,8 +38,8 @@ public class GameManager : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "Backstage" && actNumber == 2)
         {
             player.transform.position = new Vector3(9, -5, 0);
-            mainCamera.x = 4.916037f;
-            mainCamera.y = -4.956565f;
+            mainCamera.x = 4.11f;
+            mainCamera.y = -5f;
         }
     }
 
