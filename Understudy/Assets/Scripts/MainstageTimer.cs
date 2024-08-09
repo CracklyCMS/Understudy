@@ -23,6 +23,10 @@ public class MainstageTimer : MonoBehaviour
     public GameManager gameManager;
     public float currentTime;
     public Canvas playCaptions;
+    public GameObject movingProps;
+    public MovingPropsScript prop1;
+    public MovingPropsScript prop2;
+    public MovingPropsScript prop3;
     public bool shouldFade = false;
 
     float fadeAlpha = 0;
@@ -33,6 +37,14 @@ public class MainstageTimer : MonoBehaviour
         spotlight.gameObject.SetActive(false);
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         StartCoroutine(StartMessage());
+        //if (gameManager.actNumber == 2)
+        //{
+        //    movingProps.SetActive(true);
+        //}
+        //else
+        //{
+        //    movingProps.SetActive(false);
+        //}
     }
 
     void Update()
@@ -85,5 +97,8 @@ public class MainstageTimer : MonoBehaviour
         remaining.gameObject.SetActive(true);
         message.gameObject.SetActive(false);
         playCaptions.gameObject.SetActive(true);
+        //prop1.BeginMovement();
+        //prop2.BeginMovement();
+        //prop3.BeginMovement();
     }
 }
