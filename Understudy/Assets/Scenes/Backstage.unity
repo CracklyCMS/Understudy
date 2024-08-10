@@ -2313,7 +2313,7 @@ PrefabInstance:
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: 937a1eb8b3aaa6840aa0bb1bf1b9de22, type: 3}
+      objectReference: {fileID: 21300000, guid: 73a17a397241a0c43a66e3417c2b472d, type: 3}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: text
       value: 
@@ -2324,7 +2324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: npcName
-      value: Harold
+      value: Troy
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: textBox
@@ -2352,7 +2352,7 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
-      value: Get ready! You're on next!
+      value: You're on next! You gotta get in the game!
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
@@ -3612,8 +3612,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 250}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 334.2, y: 387.8}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366076203
 MonoBehaviour:
@@ -3635,7 +3635,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 477c122e52d1e364e8a79bd34aa2ce76, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35fd17e22c3a4204182ca1ea16081b2e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20684,7 +20684,7 @@ PrefabInstance:
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: icon
       value: 
-      objectReference: {fileID: 21300000, guid: 3be717c9071e33f4fa5b2dde41c5bed8, type: 3}
+      objectReference: {fileID: 21300000, guid: 35fd17e22c3a4204182ca1ea16081b2e, type: 3}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: text
       value: 
@@ -20695,7 +20695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: npcName
-      value: Rebecca
+      value: Ms. Eden
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: textBox
@@ -20715,7 +20715,7 @@ PrefabInstance:
       objectReference: {fileID: 279384193}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: act2Dialogue
-      value: You better not be ruining the show.
+      value: Almost done, please don't mess this up!
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent
@@ -20905,7 +20905,7 @@ PrefabInstance:
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: icon
       value: 
-      objectReference: {fileID: -1654839135, guid: 037f302c487b8ad4d8fcea0af4011caa, type: 3}
+      objectReference: {fileID: 21300000, guid: 8f4fc43d20299f34fa62cb5b2c875c7d, type: 3}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: text
       value: 
@@ -20916,7 +20916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: npcName
-      value: Jane
+      value: Ky
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: textBox
@@ -20936,7 +20936,7 @@ PrefabInstance:
       objectReference: {fileID: 279384193}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: act2Dialogue
-      value: Nice job, I guess.
+      value: Nice job...
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: iconComponent
@@ -20944,7 +20944,7 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
-      value: Good luck, I think you'll need it.
+      value: Good...Good luck, out there. You got this.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
