@@ -10487,11 +10487,11 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
-      value: Good...Good luck, out there. You got this.
+      value: I'm happy for you. One day I'll go on stage too. Good luck.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
-      value: Jeez, you're really doing this huh.
+      value: Are you serious?
       objectReference: {fileID: 0}
     - target: {fileID: 4916353012006217446, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Name
