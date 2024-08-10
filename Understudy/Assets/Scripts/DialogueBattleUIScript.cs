@@ -29,11 +29,14 @@ public class DialogueBattleUIScript : MonoBehaviour
     public string chosenWhoName;
     public Sprite chosenWhoSprite;
     public Sprite prometheusSprite;
+    public AudioClip goodApplause;
+    public AudioClip badMurmur;
 
 
     private int dialogueIndex = 0;
     private bool isonScript;
     private bool optionChoosen = false;
+    private AudioSource audio;
 
     // Start is called before the first frame update
     public void SetParameters()
@@ -42,6 +45,8 @@ public class DialogueBattleUIScript : MonoBehaviour
         leftChoiceText.text = chosenOptions[0];
         rightChoiceText.text = chosenOptions[1];
         dialogueText.text = chosenDialogue[dialogueIndex];
+        audio = GetComponent<AudioSource>();
+        audio.volume = 0.5f;
     }
 
     public void HandleCurrentSpeaker()
@@ -106,8 +111,15 @@ public class DialogueBattleUIScript : MonoBehaviour
             {
                 if(isonScript) 
                 {
+                    audio.clip = goodApplause;
+                    audio.Play();
                     player.faithfulness += 10;
                     print("FAITHFUL");
+                }
+                else
+                {
+                    audio.clip = badMurmur;
+                    audio.Play();
                 }
                 dialogueText.text = chosenDialogue[dialogueIndex];
                 dialogueIndex++;
