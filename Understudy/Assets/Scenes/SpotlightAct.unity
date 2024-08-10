@@ -990,6 +990,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2051477971}
   winCondition: {fileID: 1753611582}
+  endScreen: {fileID: 0}
+  photoOff: {fileID: 21300000, guid: 0e4125cda0685dd4985ff4e0a0194c15, type: 3}
+  photoOn: {fileID: 21300000, guid: 08752d45ac6d37e4990e6905edc72a85, type: 3}
 --- !u!1 &150951832
 GameObject:
   m_ObjectHideFlags: 0
@@ -14942,14 +14945,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.25, g: 0.5, b: 0.25, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 08752d45ac6d37e4990e6905edc72a85, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
