@@ -23,24 +23,24 @@ public class BackstageTimer : MonoBehaviour
 
     void Update()
     {
-        if (timerIsRunning)
-        {
-            if (timeRemaining > 0)
-            {
-                timeRemaining -= Time.deltaTime;
-                DisplayTime(timeRemaining);
-            }
-            else
-            {
-                Debug.Log("Time has run out!");
-                timeRemaining = 0;
-                timerIsRunning = false;
-            }
-        }
-        else if (timeRemaining == 0)
-        {
-            FadeOut();
-        }
+        //if (timerIsRunning)
+        //{
+        //    if (timeRemaining > 0)
+        //    {
+        //        timeRemaining -= Time.deltaTime;
+        //        DisplayTime(timeRemaining);
+        //    }
+        //    else
+        //    {
+        //        Debug.Log("Time has run out!");
+        //        timeRemaining = 0;
+        //        timerIsRunning = false;
+        //    }
+        //}
+        //else if (timeRemaining == 0)
+        //{
+        //    FadeOut();
+        //}
     }
 
     void DisplayTime(float timeToDisplay)

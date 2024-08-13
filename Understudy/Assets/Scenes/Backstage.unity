@@ -397,7 +397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &43216159
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1859,7 +1859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &245643897
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2376,7 +2376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8597892873004800337, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.53
+      value: -2.89
       objectReference: {fileID: 0}
     - target: {fileID: 8597892873004800337, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2453,6 +2453,7 @@ MonoBehaviour:
   actNumber: 1
   outfitNumber: 0
   currentCostume: {fileID: 9100000, guid: a816ab8024c217649a3af152a0155354, type: 2}
+  defaultCostume: {fileID: 9100000, guid: a816ab8024c217649a3af152a0155354, type: 2}
 --- !u!4 &279384194
 Transform:
   m_ObjectHideFlags: 0
@@ -3400,8 +3401,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 341, y: -155}
-  m_SizeDelta: {x: 184.3763, y: 83.2099}
+  m_AnchoredPosition: {x: 440.8, y: -155}
+  m_SizeDelta: {x: 482.96, y: 83.2099}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &358706760
 MonoBehaviour:
@@ -3423,7 +3424,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: D/B
+  m_text: D Key/B Button
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52bf38799a4e4a44f87d08964c231ca3, type: 2}
   m_sharedMaterial: {fileID: -3101700794633949065, guid: 52bf38799a4e4a44f87d08964c231ca3, type: 2}
@@ -4628,7 +4629,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &501057319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12390,7 +12391,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Space/A to Select
+  m_text: Space Bar/A Button to Select
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52bf38799a4e4a44f87d08964c231ca3, type: 2}
   m_sharedMaterial: {fileID: -3101700794633949065, guid: 52bf38799a4e4a44f87d08964c231ca3, type: 2}
@@ -17694,7 +17695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 354, y: -67}
+  m_AnchoredPosition: {x: 453.4, y: -67}
   m_SizeDelta: {x: 130.3691, y: 215.4981}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1799534230
@@ -19556,7 +19557,7 @@ Animator:
   m_GameObject: {fileID: 580134394}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a3a6480c1cd35e14989576ccbcfe33d1, type: 2}
+  m_Controller: {fileID: 9100000, guid: a816ab8024c217649a3af152a0155354, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

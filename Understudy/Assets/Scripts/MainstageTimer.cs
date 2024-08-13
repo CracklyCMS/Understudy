@@ -81,6 +81,7 @@ public class MainstageTimer : MonoBehaviour
             else if(gameManager.actNumber == 2)
             {
                 gameOverScreen.gameObject.SetActive(true);
+                shouldFade = false;
             }
         }
     }
@@ -93,12 +94,9 @@ public class MainstageTimer : MonoBehaviour
         timerIsRunning = true;
         player.canMove = true;
         spotlight.gameObject.SetActive(true);
-        time.gameObject.SetActive(true);
-        remaining.gameObject.SetActive(true);
+        //time.gameObject.SetActive(true);
+        //remaining.gameObject.SetActive(true);
         message.gameObject.SetActive(false);
         playCaptions.gameObject.SetActive(true);
-        //prop1.BeginMovement();
-        //prop2.BeginMovement();
-        //prop3.BeginMovement();
     }
 }

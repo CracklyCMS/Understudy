@@ -12,10 +12,12 @@ public class GameOverScreenScript : MonoBehaviour
     public Image endScreen;
     public Sprite photoOff;
     public Sprite photoOn;
+    public GameManager manager;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        manager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -36,6 +38,8 @@ public class GameOverScreenScript : MonoBehaviour
     public void TitleScreen()
     {
         SceneManager.LoadScene("TitleScreen");
+        manager.actNumber = 1;
+        player.faithfulness = 0;
     }
 
     public void QuitGame()

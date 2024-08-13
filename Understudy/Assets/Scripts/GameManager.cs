@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public int actNumber = 1;
     public int outfitNumber = 0;
     public RuntimeAnimatorController currentCostume;
+    public RuntimeAnimatorController defaultCostume;
 
     private void Awake()
     {
@@ -32,6 +33,10 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene current, LoadSceneMode mode)
     {
+        if(SceneManager.GetActiveScene().name == "Backstage" && actNumber == 1)
+        {
+            currentCostume = defaultCostume;
+        }
         player = GameObject.Find("Player").GetComponent<PlayerScript>();
         mainCamera = GameObject.Find("Main Camera").GetComponent<CameraScript>();
         player.GetComponent<Animator>().runtimeAnimatorController = currentCostume;

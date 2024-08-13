@@ -11,7 +11,9 @@ public class LineCueScript : MonoBehaviour
     public MainstageTimer mainstageTimer;
     public Canvas playCaptions;
     public GameManager gameManager;
-    public GameObject zeus;
+    public GameObject opponent;
+    public RuntimeAnimatorController zeusAnimator;
+    public RuntimeAnimatorController hephAnimator;
     public string whoIsPlayerTalkingTo1;
     public Sprite whoIsPlayerTalkingToSprite1;
     public bool[] isPlayerTalking1;
@@ -31,7 +33,7 @@ public class LineCueScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //ENABLE AND DISABLE SPECIFIC GAME OBJECTS
-        zeus.SetActive(true);
+        opponent.SetActive(true);
         player.canMove = false;
         player.rb.velocity = Vector3.zero;
         player.transform.position = new Vector3(-2.25f, 0.5f, 0);
@@ -45,6 +47,14 @@ public class LineCueScript : MonoBehaviour
         //SET TEXT
         if (gameManager.actNumber == 1)
         {
+            if(whoIsPlayerTalkingTo1 == "Hephaestus")
+            {
+                opponent.GetComponent<Animator>().runtimeAnimatorController = hephAnimator;
+            }
+            else
+            {
+                opponent.GetComponent<Animator>().runtimeAnimatorController = zeusAnimator;
+            }
             lines.chosenDialogue = act1Dialogue;
             lines.chosenOptions = act1Options;
             lines.chosenIsPlayerTalking = isPlayerTalking1;

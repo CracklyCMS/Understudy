@@ -53,12 +53,22 @@ public class PlayCaptionsScript : MonoBehaviour
                 timer.shouldFade = true;
                 gameObject.SetActive(false);
             }
-            if(index == 4)
+            if(index == 4 && gameManager.actNumber != 1)
             {
                 timer.ActivateCue1();
                 gameObject.SetActive(false);
             }
-            if(index == 8)
+            if(index == 8 && gameManager.actNumber == 1)
+            {
+                timer.ActivateCue1();
+                gameObject.SetActive(false);
+            }
+            if(index == 8 && gameManager.actNumber != 1)
+            {
+                timer.ActivateCue2();
+                gameObject.SetActive(false);
+            }
+            if (index == 12 && gameManager.actNumber == 1)
             {
                 timer.ActivateCue2();
                 gameObject.SetActive(false);
