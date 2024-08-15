@@ -30,6 +30,7 @@ public class Introscript : MonoBehaviour
         if (spacePressed && timerReached)
         {
             // Cycle through text options
+            displayText.color = new Color(.1f, .1f, .75f, 1);
             currentIndex = (currentIndex + 1) % textOptions.Length;
             displayText.text = textOptions[currentIndex];
             timerReached = false;
