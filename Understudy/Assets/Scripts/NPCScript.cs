@@ -11,6 +11,7 @@ public class NPCScript : MonoBehaviour
     public string defaultDialogue;
     public string act2Dialogue;
     public string diffOutfitDialogue;
+    public string unchangedDialogue;
     public string npcName;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI text;
@@ -60,6 +61,10 @@ public class NPCScript : MonoBehaviour
             else if (playerOutfitChoice == 1)
             {
                 text.text = diffOutfitDialogue;
+            }
+            else if (playerOutfitChoice == 2)
+            {
+                text.text = unchangedDialogue;
             }
             else
             {

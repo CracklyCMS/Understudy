@@ -10,8 +10,9 @@ public class GameManager : MonoBehaviour
     public CameraScript mainCamera;
 
     public int playerFaith;
+    public int playerTimeOnStage;
     public int actNumber = 1;
-    public int outfitNumber = 0;
+    public int outfitNumber = 2;
     public RuntimeAnimatorController currentCostume;
     public RuntimeAnimatorController defaultCostume;
 
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "Backstage" && actNumber == 1)
         {
             currentCostume = defaultCostume;
+            outfitNumber = 2;
         }
         player = GameObject.Find("Player").GetComponent<PlayerScript>();
         mainCamera = GameObject.Find("Main Camera").GetComponent<CameraScript>();
@@ -50,6 +52,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        playerFaith = player.faithfulness;
+        if(SceneManager.GetActiveScene().name == "SpotlightAct")
+        {
+            playerFaith = player.faithfulness;
+            playerTimeOnStage = player.timeOnStage;
+        }
     }
 }

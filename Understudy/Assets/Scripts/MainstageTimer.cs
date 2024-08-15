@@ -23,10 +23,7 @@ public class MainstageTimer : MonoBehaviour
     public GameManager gameManager;
     public float currentTime;
     public Canvas playCaptions;
-    public GameObject movingProps;
-    public MovingPropsScript prop1;
-    public MovingPropsScript prop2;
-    public MovingPropsScript prop3;
+    public GameObject music;
     public bool shouldFade = false;
 
     float fadeAlpha = 0;
@@ -37,14 +34,6 @@ public class MainstageTimer : MonoBehaviour
         spotlight.gameObject.SetActive(false);
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         StartCoroutine(StartMessage());
-        //if (gameManager.actNumber == 2)
-        //{
-        //    movingProps.SetActive(true);
-        //}
-        //else
-        //{
-        //    movingProps.SetActive(false);
-        //}
     }
 
     void Update()
@@ -80,6 +69,9 @@ public class MainstageTimer : MonoBehaviour
             }
             else if(gameManager.actNumber == 2)
             {
+                Destroy(music);
+                player.canMove = false;
+                spotlight.gameObject.SetActive(false);
                 gameOverScreen.gameObject.SetActive(true);
                 shouldFade = false;
             }
@@ -94,8 +86,6 @@ public class MainstageTimer : MonoBehaviour
         timerIsRunning = true;
         player.canMove = true;
         spotlight.gameObject.SetActive(true);
-        //time.gameObject.SetActive(true);
-        //remaining.gameObject.SetActive(true);
         message.gameObject.SetActive(false);
         playCaptions.gameObject.SetActive(true);
     }

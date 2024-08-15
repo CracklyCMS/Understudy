@@ -14,6 +14,8 @@ public class GameOverScreenScript : MonoBehaviour
     public Sprite photoOn;
     public GameManager manager;
 
+    private bool checkOnce = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,15 +25,20 @@ public class GameOverScreenScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(player.faithfulness <= 30)
+        float trueFaithfulness = ((float)player.faithfulness / player.timeOnStage);
+        if(trueFaithfulness <= .5 && checkOnce)
         {
             endScreen.sprite = photoOff;
             winCondition.text = "You decided to stay off script by avoiding the spotlight and picking off script lines.";
+            print(trueFaithfulness);
+            checkOnce = false;
         }
-        else
+        else if (checkOnce)
         {
             endScreen.sprite = photoOn;
             winCondition.text = "You decided to stay on script by following the spotlight and picking on script lines.";
+            print(trueFaithfulness);
+            checkOnce = false;
         }
     }
 
@@ -40,6 +47,7 @@ public class GameOverScreenScript : MonoBehaviour
         SceneManager.LoadScene("TitleScreen");
         manager.actNumber = 1;
         player.faithfulness = 0;
+        player.timeOnStage = 0;
     }
 
     public void QuitGame()

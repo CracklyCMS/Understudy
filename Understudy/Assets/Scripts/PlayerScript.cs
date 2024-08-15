@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody2D rb;
     Vector2 movement;
     public int faithfulness;
+    public int timeOnStage;
     public bool inSpotlight;
     public bool canMove;
 
@@ -17,6 +19,9 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameManager manager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        faithfulness = manager.playerFaith;
+        timeOnStage = manager.playerTimeOnStage;
         StartCoroutine(ManageFaithfulness());
         playerAnimator = GetComponent<Animator>();
     }
@@ -68,6 +73,10 @@ public class PlayerScript : MonoBehaviour
         if (inSpotlight)
         {
             faithfulness++; //increment 1
+        }
+        if (SceneManager.GetActiveScene().name == "SpotlightAct" && canMove)
+        {
+            timeOnStage++;
         }
         StartCoroutine(ManageFaithfulness());
         //print(faithfulness);

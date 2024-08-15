@@ -1868,10 +1868,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   currentTime: 0
   playCaptions: {fileID: 748703814}
-  movingProps: {fileID: 857908053}
-  prop1: {fileID: 724414247}
-  prop2: {fileID: 1965321181}
-  prop3: {fileID: 1703188601}
+  music: {fileID: 301072860}
   shouldFade: 0
 --- !u!1 &240446639
 GameObject:

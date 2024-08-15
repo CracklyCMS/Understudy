@@ -588,7 +588,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 638b0bab5604a614fb07f40993f09587, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2256,15 +2256,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -161771623606064021, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.y
-      value: 1.25
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.x
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.y
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
@@ -2276,11 +2276,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      value: 1.21
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      value: 1.92
       objectReference: {fileID: 0}
     - target: {fileID: 2834198044662259776, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Size.x
@@ -2353,6 +2353,10 @@ PrefabInstance:
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
       value: You're on next! You gotta get in the game!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: unchangedDialogue
+      value: You can't go out there until you get into costume, dude.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
@@ -2450,8 +2454,9 @@ MonoBehaviour:
   player: {fileID: 0}
   mainCamera: {fileID: 0}
   playerFaith: 0
+  playerTimeOnStage: 0
   actNumber: 1
-  outfitNumber: 0
+  outfitNumber: 2
   currentCostume: {fileID: 9100000, guid: a816ab8024c217649a3af152a0155354, type: 2}
   defaultCostume: {fileID: 9100000, guid: a816ab8024c217649a3af152a0155354, type: 2}
 --- !u!4 &279384194
@@ -5400,6 +5405,24 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1706454923}
   m_SourcePrefab: {fileID: 100100000, guid: 88f6fc90388fd9d479da543c02ff964d, type: 3}
+--- !u!1 &555827910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2165932052332132658, guid: d84290fbeb001694f947a493e8464690, type: 3}
+  m_PrefabInstance: {fileID: 1451896163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &555827914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555827910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01361b79fb0a2ee4f864326aed7947c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
 --- !u!1 &560978927
 GameObject:
   m_ObjectHideFlags: 0
@@ -10292,7 +10315,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 638b0bab5604a614fb07f40993f09587, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10420,11 +10443,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.1466666
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: 165292774984480558, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.6533333
+      value: 1.92
       objectReference: {fileID: 0}
     - target: {fileID: 2834198044662259776, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: m_Sprite
@@ -10488,6 +10511,10 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
+      value: I'm happy for you. One day I'll go on stage too. Good luck.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: unchangedDialogue
       value: I'm happy for you. One day I'll go on stage too. Good luck.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
@@ -14606,6 +14633,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1451896163
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2165932052332132658, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_Name
+      value: CostumeBarrier
+      objectReference: {fileID: 0}
+    - target: {fileID: 2165932052332132658, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354751438234424542, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.2290645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9031400872292830840, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2165932052332132658, guid: d84290fbeb001694f947a493e8464690, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 555827914}
+  m_SourcePrefab: {fileID: 100100000, guid: d84290fbeb001694f947a493e8464690, type: 3}
 --- !u!1 &1456814235
 GameObject:
   m_ObjectHideFlags: 0
@@ -20905,6 +21004,10 @@ PrefabInstance:
       value: Are you sure you're up for this?
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: unchangedDialogue
+      value: Are you sure you're up for this?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
       value: What are you doing?
       objectReference: {fileID: 0}
@@ -21126,6 +21229,10 @@ PrefabInstance:
       value: Good...Good luck, out there. You got this.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: unchangedDialogue
+      value: Good...Good luck, out there. You got this.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
       value: Jeez, you're really doing this huh.
       objectReference: {fileID: 0}
@@ -21229,3 +21336,4 @@ SceneRoots:
   - {fileID: 1003936067}
   - {fileID: 1414403799}
   - {fileID: 615746671}
+  - {fileID: 1451896163}
