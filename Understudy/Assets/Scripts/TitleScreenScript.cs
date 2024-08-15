@@ -7,7 +7,7 @@ public class TitleScreenScript : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Backstage");
+        SceneManager.LoadScene("IntroSequence");
     }
 
     public void QuitGame()

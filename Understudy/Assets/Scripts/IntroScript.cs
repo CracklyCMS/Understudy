@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class Introscript : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class Introscript : MonoBehaviour
 
     bool timerReached = true;
     float timer = 0;
+    int lineCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,7 @@ public class Introscript : MonoBehaviour
             currentIndex = (currentIndex + 1) % textOptions.Length;
             displayText.text = textOptions[currentIndex];
             timerReached = false;
+            lineCount += 1;
         }
 
         if (!timerReached && timer < 2)
@@ -40,6 +44,10 @@ public class Introscript : MonoBehaviour
         {
             timerReached = true;
             timer = 0;
+        }
+
+        if (lineCount == textOptions.Length - 1){
+            SceneManager.LoadScene("Backstage");
         }
 
     }
