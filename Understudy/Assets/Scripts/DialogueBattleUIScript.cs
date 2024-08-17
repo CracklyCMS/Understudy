@@ -72,16 +72,16 @@ public class DialogueBattleUIScript : MonoBehaviour
         HandleCurrentSpeaker();
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetButtonDown("Cancel")) //RIGHT
         {
-            rightChoice.color = new Color(0, 0.5f, 0.1f);
-            leftChoice.color = new Color(0.5f, 0, 0);
+            rightChoice.color = new Color(0.6f, 0.3f, 0.4f);
+            leftChoice.color = new Color(0.5f, 0.1f, 0.5f);
             optionChoosen = true;
             isonScript = false;
             print("RIGHT CHOICE");
         }
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)|| Input.GetButtonDown("Jump")) //LEFT
         {
-            rightChoice.color = new Color(0.5f, 0, 0);
-            leftChoice.color = new Color(0, 0.5f, 0.1f);
+            rightChoice.color = new Color(0.5f, 0.1f, 0.5f);
+            leftChoice.color = new Color(0.6f, 0.3f, 0.4f);
             optionChoosen = true;
             isonScript = true;
             print("LEFT CHOICE");
