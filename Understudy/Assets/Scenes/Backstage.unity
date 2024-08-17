@@ -10511,11 +10511,13 @@ PrefabInstance:
       objectReference: {fileID: 366076203}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
-      value: I'm happy for you. One day I'll go on stage too. Good luck.
+      value: Make sure you change into the right costume before you get on stage!
+        The changing room is right in front of me.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: unchangedDialogue
-      value: I'm happy for you. One day I'll go on stage too. Good luck.
+      value: Make sure you change into the right costume before you get on stage!
+        The changing room is right in front of me.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: diffOutfitDialogue
