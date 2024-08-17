@@ -36,6 +36,7 @@ public class SpotlightScript : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
+            player.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
             player.inSpotlight = true;
             print("DETECTED");
         }
@@ -45,6 +46,7 @@ public class SpotlightScript : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
+            player.GetComponent<SpriteRenderer>().color = new Color(.625f, .625f, .625f, 1f);
             player.inSpotlight = false;
             print("UNDETECTED");
         }

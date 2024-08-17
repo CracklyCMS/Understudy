@@ -37,6 +37,7 @@ public class LineCueScript : MonoBehaviour
         player.canMove = false;
         player.rb.velocity = Vector3.zero;
         player.transform.position = new Vector3(-2.25f, 0.5f, 0);
+        player.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
         spotlight.gameObject.SetActive(false);
         lines.gameObject.SetActive(true);
         playCaptions.gameObject.SetActive(false);
