@@ -44,9 +44,12 @@ TagManager:
   - name: Spotlight
     uniqueID: 2967143283
     locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
   - name: Player
     uniqueID: 1266843291
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: FrontProps
+    uniqueID: 3643296973
     locked: 0
