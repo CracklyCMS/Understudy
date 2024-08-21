@@ -10,6 +10,11 @@ public class TitleScreenScript : MonoBehaviour
         SceneManager.LoadScene("IntroSequence");
     }
 
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

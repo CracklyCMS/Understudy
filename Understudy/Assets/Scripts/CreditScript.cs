@@ -6,14 +6,9 @@ using UnityEngine.SceneManagement;
 public class CreditScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    public void TitleScreen()
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("TitleScreen");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

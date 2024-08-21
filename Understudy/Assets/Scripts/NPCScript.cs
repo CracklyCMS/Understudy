@@ -9,7 +9,8 @@ public class NPCScript : MonoBehaviour
 {
 
     public string defaultDialogue;
-    public string act2Dialogue;
+    public string offScriptDialogue;
+    public string onScriptDialogue;
     public string diffOutfitDialogue;
     public string unchangedDialogue;
     public string npcName;
@@ -56,7 +57,14 @@ public class NPCScript : MonoBehaviour
             playerOutfitChoice = gameManager.outfitNumber;
             if (actNumber == 2)
             {
-                text.text = act2Dialogue;
+                if(gameManager.trueFaithfulness <= .5)
+                {
+                    text.text = offScriptDialogue;
+                }
+                else
+                {
+                    text.text = onScriptDialogue;
+                }
             }
             else if (playerOutfitChoice == 1)
             {

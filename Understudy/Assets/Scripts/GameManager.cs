@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public int playerFaith;
     public int playerTimeOnStage;
+    public float trueFaithfulness;
     public int actNumber = 1;
     public int outfitNumber = 2;
     public RuntimeAnimatorController currentCostume;
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
         {
             playerFaith = player.faithfulness;
             playerTimeOnStage = player.timeOnStage;
+            trueFaithfulness = ((float)player.faithfulness / player.timeOnStage);
         }
     }
 }
