@@ -26,7 +26,7 @@ public class Introscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool spacePressed = Input.GetKey(KeyCode.Space);
+        bool spacePressed = (Input.GetKey(KeyCode.Space) || Input.GetButtonDown("Submit"));
         if (spacePressed && timerReached)
         {
             // Cycle through text options

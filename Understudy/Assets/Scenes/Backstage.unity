@@ -2355,6 +2355,14 @@ PrefabInstance:
       value: You're on next! You gotta get in the game!
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: onScriptDialogue
+      value: The show is going great! Thanks for pulling through!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: offScriptDialogue
+      value: Why are you doing this? The show is going to be ruined!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: unchangedDialogue
       value: You can't go out there until you get into costume, dude.
       objectReference: {fileID: 0}
@@ -2455,6 +2463,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   playerFaith: 0
   playerTimeOnStage: 0
+  trueFaithfulness: 0
   actNumber: 1
   outfitNumber: 2
   currentCostume: {fileID: 9100000, guid: a816ab8024c217649a3af152a0155354, type: 2}
@@ -10513,6 +10522,14 @@ PrefabInstance:
       propertyPath: defaultDialogue
       value: Make sure you change into the right costume before you get on stage!
         The changing room is right in front of me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: onScriptDialogue
+      value: Wow, we're all pretty proud of you right now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: offScriptDialogue
+      value: All eyes are definitely on you now.
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: unchangedDialogue
@@ -21006,6 +21023,14 @@ PrefabInstance:
       value: Are you sure you're up for this?
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: onScriptDialogue
+      value: Keep up the excellent work!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: offScriptDialogue
+      value: This isn't right...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: unchangedDialogue
       value: Are you sure you're up for this?
       objectReference: {fileID: 0}
@@ -21229,6 +21254,14 @@ PrefabInstance:
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: defaultDialogue
       value: Good...Good luck, out there. You got this.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: onScriptDialogue
+      value: You ain't doing half bad out there!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
+      propertyPath: offScriptDialogue
+      value: I can't believe it...
       objectReference: {fileID: 0}
     - target: {fileID: 4573736238752234031, guid: 29498e5943a69d642b3f521431cbbde4, type: 3}
       propertyPath: unchangedDialogue

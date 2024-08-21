@@ -139,8 +139,8 @@ public class DialogueBattleUIScript : MonoBehaviour
                 player.GetComponent<SpriteRenderer>().color = new Color(.625f, .625f, .625f, 1f);
                 spotlight.gameObject.SetActive(true);
                 playCaptions.gameObject.SetActive(true);
-                leftChoice.color = new Color(0.5f, 0, 0);
-                rightChoice.color = new Color(0.5f, 0, 0);
+                leftChoice.color = new Color(0.25f, 0.1f, 0.25f, 1f);
+                rightChoice.color = new Color(0.25f, 0.1f, 0.25f, 1f);
                 mainstageTimer.timerIsRunning = true;
                 gameCamera.shouldUpdate = true;
                 gameCamera.GetComponent<Camera>().orthographicSize = 5;
