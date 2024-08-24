@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 530, y: -370}
-  m_SizeDelta: {x: 601.9001, y: 121.7679}
+  m_AnchoredPosition: {x: 500, y: -400}
+  m_SizeDelta: {x: 857.23, y: 121.7679}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &67765700
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[Press Space to Continue]'
+  m_text: '[Press Space Bar/A Button to Continue]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52bf38799a4e4a44f87d08964c231ca3, type: 2}
   m_sharedMaterial: {fileID: -3101700794633949065, guid: 52bf38799a4e4a44f87d08964c231ca3, type: 2}

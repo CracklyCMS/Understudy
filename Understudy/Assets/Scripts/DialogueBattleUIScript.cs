@@ -47,6 +47,7 @@ public class DialogueBattleUIScript : MonoBehaviour
         dialogueText.text = chosenDialogue[dialogueIndex];
         audio = GetComponent<AudioSource>();
         audio.volume = 0.5f;
+        player.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
     }
 
     public void HandleCurrentSpeaker()
