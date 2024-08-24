@@ -1190,8 +1190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed28ae30b13cfb4fa41b649f44a04e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onScriptCutscene: {fileID: 32900000, guid: 8774744c2427dd0459031a19617dea24, type: 3}
-  offScriptCutscene: {fileID: 32900000, guid: 6cc017333def23a4bb5e97026c4b4fbf, type: 3}
+  onScriptCutscene: {fileID: 32900000, guid: df50350b1a3abc64196bdddeb927d24e, type: 3}
+  offScriptCutscene: {fileID: 32900000, guid: 2bd1db030b6789a4880c2651a1b8d0cc, type: 3}
   cutscenePlayer: {fileID: 1802611997}
   cutsceneScreen: {fileID: 580420036}
   player: {fileID: 2051477971}
