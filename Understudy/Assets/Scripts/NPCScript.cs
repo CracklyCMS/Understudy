@@ -13,6 +13,8 @@ public class NPCScript : MonoBehaviour
     public string diffOutfitDialogue;
     public string unchangedDialogue;
     public string npcName;
+    public AudioSource soundSource;
+    public AudioClip soundClip;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI text;
     public Canvas textBox;
@@ -27,11 +29,14 @@ public class NPCScript : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        soundSource = GetComponent<AudioSource>();
         actNumber = gameManager.actNumber;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        soundSource.pitch = 1.5f;
+        soundSource.PlayOneShot(soundClip);
         activeNPC = true;
         textBox.gameObject.SetActive(true);
         iconComponent.sprite = icon;
@@ -42,6 +47,8 @@ public class NPCScript : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
+            soundSource.pitch = .75f;
+            soundSource.PlayOneShot(soundClip);
             activeNPC = false;
             textBox.gameObject.SetActive(false);
             print("UNDETECTED");
